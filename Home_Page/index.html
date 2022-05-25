@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Used to make a Responsive webpage -->
+    <title>Dream Fitness - Staying Fit in the Mordern</title>
+    <!-- Used to connect html and css documents -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- HamBurger Section -->
+    <div class="navigation">
+        <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>          
+        <div id="hambuger">
+            <div id="menu" onclick="onClickMenu()" >
+                <div id = "bar1" class="bar"></div>
+                <div id = "bar2" class="bar"></div>
+                <div id = "bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="../Home_Page/index.html" class="nav_items">Home</a></li>
+                <li><a href="../About_Page/about.html" class="nav_items">About</a></li>
+                <li><a href="../Exercise_Page/exercise.html" class="nav_items">Exercise</a></li>
+                <li><a href="../Nutrition_Page/nutrition.html" class="nav_items">Nutrition</a></li>
+                <li><a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1" class="nav_items">Find Gyms</a></li>
+                <li><a href="../Resources_Page/resources.html" class="nav_items">Resources</a></li>
+                <li><a href="../Contact_Page/contact.html" class="nav_items">Consult Experts</a></li>
+                <li> <button class="login"> <a href="../Login_Page/login.html" > <p class="log">Login </p> </a> </button> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HamBurger Section Ends -->
+
+    <!-- Navigation Section -->
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>
+            <li> <a href="../Home_Page/index.html" class="theme_color">Home</a> </li>
+            <li> <a href="../About_Page/about.html" class="theme_color">About</a> </li>
+            <li> <a href="../Exercise_Page/exercise.html" class="theme_color">Exercises</a> </li>
+            <li> <a href="../Nutrition_Page/nutrition.html" class="theme_color">Nutrition</a> </li>
+            <li> <a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1" class="theme_color">Find
+                    Gyms</a></li>
+            <li> <a href="../Resources_Page/resources.html" class="theme_color">Resources</a> </li>
+            <li> <a href="../Contact_Page/contact.html" target="_blank" class="theme_color">Consult Experts</a> </li>
+            <!-- <li> <a href="../Fitness_Center/fit.html" target="_blank">Our</a> </li> -->
+        </ul>
+
+        <!-- Right-Side of Navigation Section (Search-Box) -->
+
+        <div class="rightnav">
+            <!-- <input type="text" name="search" id="search"> -->
+            <!-- <button class="btn btn-search"> <a href="../Login_Page/login.hrml"><img src="image.png" alt="login" width="20"
+                        height="20"></a></button> -->
+            <button class="login"> <a href="../Login_Page/login.html" ><p class="log">Log in</p></a> </button>
+        </div>
+    </nav>
+
+    <!-- For Sticky Navigation Bar -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("navbar").addClass("black");
+            }
+            else{
+                $("navbar").removeClass("black");
+            }
+        });
+    </script> -->
+
+
+    <!-- Navigation Section Ends -->
+
+
+
+
+
+    <video id=videoBG poster="poster.png" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- Aspire to Be Fit! -->
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Aspire to Be Fit!</p>
+                <p class="text-small"><i>FITNESS</i> is like a <i>RELATIONSHIP.</i>
+                    <br>You can't cheat and expect it to work. :)
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Calculator Section -->
+
+    <section class="items">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Fitness_Assesment Heading -->
+
+        <p class="charts">Fitness Assesment</p>
+        <div class="item">
+
+            <!-- BMI Section -->
+
+            <div class="bmi">
+                <p class="description">BMI Calculator</p>
+                <a href="bmiindex.html"> <img src="bmi.jpeg" alt="bmi" class="responsive_image_source"> </a>
+            </div>
+
+            <!-- Calorie Section -->
+
+            <div class="calorie">
+                <p class="description">Calorie Intake</p>
+                <a href="calorieintake.html"> <img src="calorie.jpeg" alt="calorie" class="responsive_image_source"> </a> 
+            </div>
+
+            <!-- Protien Section -->
+
+            <div class="protein">
+                <p class="description">Calorie Burned</p>
+                <a href="calorieburned.html"> <img src="protein.jpeg" alt="protein" class="responsive_image_source"> </a>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <!-- Our Service's Section -->
+
+
+
+    <section class="service_items">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Our_Services Heading -->
+
+        <p class="service_charts">Our Services</p>
+        <div class="service_item">
+
+            <!-- YOGA Section -->
+
+            <div class="yoga">
+                <img src="service_yoga.jpeg" alt="Yoga" class="responsive_image_source">
+                <div class="inner">
+                    <div class="info">
+                        <p class="ydescription">YOGA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARDIO Section -->
+
+            <div class="cardio">
+                <img src="service_cardio.jpeg" alt="Cardio" class="responsive_image_source">
+                <div class="inner">
+                    <div class="info">
+                        <p class="cdescription">Cardio</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal-Trainer Section -->
+
+            <div class="personal_trainer">
+                <img src="personal_trainer.png" alt="Personal_trainer" class="responsive_image_source">
+                <div class="inner">
+                    <div class="info">
+                        <p class="ptdescription">Personal Trainer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zumba_classes Section -->
+
+            <div class="zumba_classes">
+                <img src="zumba_classes.jpeg" alt="Zumba_Classes" class="responsive_image_source">
+                <div class="inner">
+                    <div class="info">
+                        <p class="zdescription">Zumba Classes</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="quick">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="quick_link">Quick Links</p>
+        <div class="links">
+            <a href="../Home_Page/index.html"  target="_blank"><p class="link">Home</p></a>
+            <a href="../About_Page/about.html"  target="_blank"><p class="link">About</p></a>
+            <a href="../Exercise_Page/exercise.html"  target="_blank"><p class="link">Exercises</p></a>
+            <a href="../Nutrition_Page/nutrition.html"  target="_blank"><p class="link">Nutrition</p></a>
+            <a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1"  target="_blank"><p class="link">Find Gyms</p></a>
+            <a href="../Resources_Page/resources.html" target="_blank"><p class="link">Resources</p></a>
+            <a href="../Contact_Page/contact.html"  target="_blank"><p class="link">Consult Experts</p></a>
+        </div>
+
+        <div class="devloper">
+            <p class="devlop"> Developed by:</p>
+            <br>
+            <br>
+            <p class="names"> Avinash Singh </p>
+            <br>
+            <p class="names"> Om Jaiswal </p>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
+
+       
+
+

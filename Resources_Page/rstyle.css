@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+/*  **************  Navigation Section Begins  ***************  */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: #002d60;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    /* background-color: black; */
+    display: flex;
+    /* Arranges all the items from vertical to horizontal level */
+    /*justify-content: center;*/
+    align-items: center;
+    /* Alligns the items in the center of the vertical axis. */
+}
+
+.nav-list li {
+    list-style: none;
+    /* Used to Remove Dot before list items*/
+    padding: 7px 4.6px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+}
+
+.rightnav {
+    width: 40%;
+    /* background-color: blueviolet; */
+    text-align: right;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 55%;
+    border: 5px;
+    border-radius: 90px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 60px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('background.jpg');
+    /* background-position: top; */
+    /* background-size: cover; */
+    width: 100%;
+    /* width:1000px;
+    height:200px; */
+    /* background-blend-mode: darken; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.btn-sm {
+    margin-right: 80px;
+}
+
+/*  **************  Navigation Section Ends  ***************  */
+
+
+/* Background for the Resources Section */
+
+.art
+{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(back.jpg);
+    /* background: pink; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2000px;
+}
+
+/* Heading :- Resouces & Blogs */
+
+/* .articles
+{
+} */
+
+.heading
+{
+    font-size:70px;
+    text-align: center;
+    margin-top:80px;
+    color: whitesmoke;
+}
+
+/* text in Resources */
+.resource{
+    font-size:25px;
+    text-align: justify;
+    margin-left: 300px;
+    font-style:italic;
+    color: white;
+}
+.sent1{
+    color:white;
+}
+
+/* 
+.articles{
+    font-size: x-large;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    color: white;
+    padding-left: 200px;
+    padding-right: 20px;
+    font-style: italic;
+}
+.heada{
+    font-size: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}   */
+
+

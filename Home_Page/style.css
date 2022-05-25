@@ -1,0 +1,991 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  **************  Navigation Section Begins  ***************  */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: transparent;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    /* Arranges all the items from vertical to horizontal level */
+    /*justify-content: center;*/
+    align-items: center;
+    /* Alligns the items in the center of the vertical axis. */
+}
+
+.nav-list li {
+    list-style: none;
+    /* Used to Remove Dot before list items*/
+    padding: 7px 4.6px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.02rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+.li a:active {
+    text-decoration: none;
+    color:rgb(92, 230, 74);
+
+}
+
+/* Undefined class for Sticky Navigation Bar */
+
+/* .navbar.black .nav-list{
+    background:#0000;
+} */
+
+/* Change theme of Home,About,Exercises,Nutrition,etc. */
+
+a.theme_color:hover,a.theme_color:active{
+    background: #1b9bff;
+
+}
+
+/* a.active
+{
+    color:green;
+}
+a:hover {
+    color:yellow;
+    transition: 0.5s;
+} */
+
+.rightnav {
+    width: 40%;
+    /* background-color: blueviolet; */
+    text-align: right;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 80px;
+}
+
+/* Login_Section */
+
+.login
+{
+    border-radius: 25px;
+}
+
+.log
+{
+    /* background: white; */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px 15px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/* Logo Section */
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 55%;
+    border: 5px;
+    border-radius: 90px;
+}
+
+.logo a:link{
+    text-decoration: none;
+    display: block;
+}
+
+
+/*  **************  Navigation Section Ends  ***************  */
+
+
+
+/* Background Video */
+
+#videoBG{
+    position:fixed;
+    /* This will keep the video element back */
+    z-index:-1;
+}
+
+/* @media (min-aspect-ratio: 16/9)
+{
+    #videoBG
+    {
+        width:100%;
+        height:auto;
+    }
+}
+@media (max-aspect-ratio: 16/9)
+{
+    #videoBG
+    {
+        width:auto;
+        height:100%;
+    }
+} */
+
+/* Background Video Ends */
+
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(230, 74, 100);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-indent: 30px */
+    height: 35%;
+}
+
+.firstSection {
+    height: 300vh;
+}
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('Home_Page/background.');
+
+}
+
+.text-big {
+    font-size: 6rem;
+    margin-left: 120px;
+}
+
+.text-small {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+.secondHAlf {
+    width: 30%
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px 13px;
+    border-radius: 3px;
+}
+
+/* .link a:hover{
+    text-decoration:none;
+    color: yellow;
+    
+} */
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+}
+
+/* Calculators */
+.items .item {
+    /* aligns the items in horizontal level */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* fit the items section just below the first background */
+.items {
+    margin-top: -970px;
+    /* background: yellowgreen; */
+    background: rgba(88, 85, 85, 0.7) url('fit5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+    height: 1000px;
+}
+
+.item {
+    margin-top: 100px;
+}
+
+/* Fitness assesmnet section */
+.charts {
+    font-size: 7rem;
+    margin-left: 360px;
+    color:blanchedalmond;
+}
+
+.description {
+    font-size: 2rem;
+    margin-left: 45px;
+    font-weight:bold;
+}
+
+/* BMI Section */
+.bmi {
+    margin: 40px;
+    padding: 20px;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.bmi:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+/* Calorie Section */
+.calorie {
+    margin: 40px;
+    padding: 20px;
+    background: pink;
+    border-radius: 50px;
+    /* Animation */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.calorie:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+/* Protein Section */
+.protein {
+    margin: 40px;
+    padding: 20px;
+    background: skyblue;
+    border-radius: 50px;
+    /* Animation */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.protein:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+
+/* ***********************  Our Services  ********************* */
+
+.service_items .service_item {
+    /* aligns the items in horizontal level */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service_items {
+    /* margin-top: -970px; */
+    /* background: yellowgreen; */
+    /* background: green; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.service_item {
+    margin-top: 100px;
+}
+
+/* Our Secrvice Section */
+.service_charts {
+    font-size: 7rem;
+    margin-left: 8rem;
+    /* margin-left: 360px; */
+
+    /* Used to color "Our Services Heading" */
+    color:rgb(223, 171, 92);
+    text-align: center;
+}
+
+/* YOGA Section */
+.yoga {
+    margin: 40px;
+    padding: 20px;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.yoga:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+.ydescription
+{
+    font-size: 30px;
+    margin-left: 160px;
+    font-weight:bold;
+}
+
+
+/* CARDIO Section */
+.cardio {
+    margin: 40px;
+    padding: 20px;
+    background: pink;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.cardio:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+.cdescription
+{
+    font-size: 30px;
+    margin-left: 160px;
+    font-weight:bold;
+}
+
+
+/* Personal-Trainer Section */
+.personal_trainer {
+    margin: 40px;
+    padding: 20px;
+    background: pink;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.personal_trainer:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+.ptdescription
+{
+    font-size: 30px;
+    margin-left: 100px;
+    font-weight:bold;
+}
+
+/* Zumba_Classes Section */
+.zumba_classes {
+    margin: 40px;
+    padding: 20px;
+    background: orange;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.zumba_classes:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+.zdescription
+{
+    font-size: 30px;
+    margin-left: 100px;
+    font-weight:bold;
+}
+
+/* Quick-Links Section */
+
+.quick{
+    height:550px;
+    margin-top:750px;
+    /* Here the a in "rgba" is used to reduce the transperancy = 0.% */
+    background:rgba(58, 56, 56, 0.7);
+}
+
+.quick_link
+{
+    font-size:1.5rem;
+    color:whitesmoke;
+    margin-top:-30px;
+    margin-left:70px;
+}
+
+.links{
+    margin-top:50px;
+    margin-left:140px;
+    
+}
+
+.link{
+    font-size:1.5rem;
+    color:whitesmoke;
+    text-decoration: none;
+    margin-left: 95px;
+}
+
+.link a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/* .links a a:hover {
+    text-decoration: none;
+    color:rgb(230, 74, 100);
+
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+} */
+
+
+
+/* Devlopers Name */
+
+.devloper
+{
+    text-align: justify;
+    margin-left: 900px;
+    margin-top:-300px;
+}
+
+.devlop
+{
+    font-size:3rem;
+    color:white;
+}
+
+.names{
+    margin-left:100px;
+    font-size:1.8rem;
+    color:white;
+}
+
+/*   **********************  Responsive Section  *******************  */
+
+
+
+@media screen and (max-width: 1268px)
+{
+
+    .text-big {
+        font-size: 6rem;
+        margin-left: 7.2rem;
+        width:50rem;
+        margin-top:6.8rem;
+    }
+    
+    .text-small {
+        font-size: 3.5rem;
+        width:66rem;
+        margin-top: 0.6rem;
+        margin-left: 10.8rem;
+    }
+
+    .items .item {
+    /* aligns the items in horizontal level */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.items {
+    margin-top: -1060px;
+    /* background: yellowgreen; */
+    background: rgba(88, 85, 85, 0.7) url('fit5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+    height: 3600px;
+    width:105rem;
+}
+
+/* Fitness assesmnet section */
+.charts {
+    font-size: 10rem;
+    margin-left: 230px;
+    color:blanchedalmond;
+}
+
+.description {
+    font-size: 5rem;
+    margin-left: 45px;
+    font-weight:bold;
+}
+
+.responsive_image_source{
+    width:43rem;
+    height:45rem;
+}
+
+/* BMI Section */
+.bmi {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.bmi:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+/* Calorie Section */
+.calorie {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: pink;
+    border-radius: 50px;
+    /* Animation */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.calorie:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+/* Protein Section */
+.protein {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: skyblue;
+    border-radius: 50px;
+    /* Animation */
+    transition:transform 0.2s;
+}
+
+/* for animation */
+.protein:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+ 
+/* ***********************  Our Services  ********************* */
+
+.service_items .service_item {
+    /* aligns the items in horizontal level */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service_items {
+    /* margin-top: -970px; */
+    /* background: yellowgreen; */
+    background: green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4700px;
+    width:105rem;
+}
+
+.service_item {
+    margin-top: 100px;
+}
+
+/* Our Secrvice Section */
+.service_charts {
+    font-size: 10rem;
+    margin-left: 1rem;
+    /* Used to color "Our Services Heading" */
+    color:rgb(223, 171, 92);
+    text-align: center;
+}
+
+/* YOGA Section */
+.yoga {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+.ydescription
+{
+    font-size: 5rem;
+    margin-left: 160px;
+    font-weight:bold;
+}
+
+/* Cardio Section */
+.cardio {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+.cdescription
+{
+    font-size: 5rem;
+    margin-left: 160px;
+    font-weight:bold;
+}
+
+/* Personal-Trainer Section */
+.personal_trainer {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+.ptdescription
+{
+    font-size: 5rem;
+    margin-left: 160px;
+    font-weight:bold;
+}
+
+/* Zumba_classes Section */
+.zumba_classes {
+    margin: 10rem 29rem;
+    padding: 1rem 2rem;
+    background: yellow;
+    border-radius: 50px;
+    /* Animation (Zoom-out feature) */
+    transition:transform 0.2s;
+}
+
+.zdescription
+{
+    font-size: 5rem;
+    margin-left: 160px;
+    font-weight:bold;
+}
+
+/* Quick-Links Section */
+
+.quick{
+    height:750px;
+    margin-top:0.01rem;
+    width:105rem;
+    /* Here the a in "rgba" is used to reduce the transperancy = 0.% */
+    background:rgba(58, 56, 56, 0.7);
+}
+
+.quick_link
+{
+    font-size:4rem;
+    color:whitesmoke;
+    margin-top:-30px;
+    margin-left:70px;
+}
+
+.link{
+    font-size:2.8rem;
+    color:whitesmoke;
+    text-decoration: none;
+    margin-left: 95px;
+}
+
+
+/* Devlopers Name */
+
+.devloper
+{
+    text-align: justify;
+    margin-left: 900px;
+    margin-top:-500px;
+}
+
+.devlop
+{
+    font-size:4rem;
+    color:white;
+}
+
+.names{
+    margin-left:100px;
+    font-size:2.8rem;
+    color:white;
+}
+
+
+}
+
+
+
+/*  ################  HAMBURGER-MENU Section  ################  */
+
+@media screen and (min-width:720px)
+{
+    .navigation{
+        display:none;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    .exercises{
+        margin-top:-102px;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+
+    .navigation{
+        display:flex;
+        height:7.12rem;
+        background:transparent;
+        width:105.2rem;
+        position:fixed;
+        /* margin:0 auto; */
+        /* width:080px; */
+        /* height:300px; */
+        /* width:40% */
+    }
+    /* .left_side{
+    
+    } */
+    
+    .logo {
+        width: 13%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position:fixed;
+        float:left;
+        /* float:left; */
+    }
+    
+    .logo img {
+        width: 55%;
+        border: 5px;
+        border-radius: 90px;
+        margin:7px 0 0 20px;
+        /* background-attachment: fixed; */
+    }
+    
+    #hamburger{
+        /* z-index: 10;   */
+        /* position: absolute; */
+        float:right;
+    }
+    
+    #menu{
+        width:35px;
+        height:40px;
+        margin:40px 150px 20px 33rem ;
+    }
+    
+    .bar{
+        height:8px;
+        width:55px;
+        margin-left:55.2rem;
+        background-color:rgb(230, 74, 100);
+        /* float:right; */
+    }
+    
+    #bar1{
+        transform:translateY(-5px);
+    }
+    
+    #bar3{
+        transform:translateY(5px);
+    }
+    
+    .nav{
+        padding: 0;
+        margin:150px -120px 0 20px;
+        transition:2s ease;
+        display:none;
+    }
+    
+    .nav li{
+        list-style:none;
+        padding:10px 0;
+        margin:13px;
+        background-color: soild white;
+    }
+    
+    .nav_items{
+        color:white;
+        text-decoration:none;
+        font-size: 2.55rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+    }
+    
+    .nav li a:hover{
+        border:1px soild white;
+        transform:scale(1.1);
+    }
+
+    /* Login_Section */
+
+    .login
+    {
+        border-radius: 45px;
+    }
+
+    .log
+    {
+        /* background: white; */
+        text-decoration: none;
+        font-size: 2.55rem;
+        color:blue;
+        height:50px;
+        /* margin:8px; */
+        font-weight: bold;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+        /* padding:0 10px; */
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+    
+    
+    .icon .bar{
+        background-color:rgb(230, 74, 100);
+        transition:1s ease;
+    }
+    
+    .icon #bar1{
+        transform:translateY(4px) rotate(-45deg);
+    }
+    
+    /* Only two lines are needed for making the cross so making the secong line opaque */
+    .icon #bar2{
+        opacity:0;
+    }
+    
+    .icon #bar3{
+        transform:translateY(-6px) rotate(45deg);
+    }
+    
+    
+    .change{
+        transition:0.3s ease;
+        background:rgba(58, 56, 56, 0.9);
+        /* background:radial-gradient(circle,#e94498,#b81568); */
+        border-radius:10px;
+        /* padding:10px; */
+        height:50rem;
+        margin-top:0.8rem;
+        margin-left:60rem;
+        position:absolute;
+        z-index: 500;
+        width:40rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        /* transform:scale(1.1); */
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .change{
+        width:56rem;
+        margin-left:40rem;
+        height:66rem;
+        margin-top:1rem;
+    }
+    .nav_items{
+        font-size:4rem;
+    }
+    .log{
+        font-size:4rem;
+        height:70px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .change{
+        width:80rem;
+        margin-left:5rem;
+        height:120rem;
+        margin-top:1rem;
+    }
+
+    .nav li{
+        margin:2.5rem;
+    }
+
+    .nav_items{
+        font-size:7rem;
+        padding:10px 200px 10px 205px;
+    }
+    .log{
+        font-size:7rem;
+        height:130px;
+        padding:10px 200px 10px 205px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    #menu{
+        margin-left:25rem;
+    }
+}

@@ -1,0 +1,1245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  **************  Navigation Section Begins  ***************  */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: blue;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    /* Arranges all the items from vertical to horizontal level */
+    /*justify-content: center;*/
+    align-items: center;
+    /* Alligns the items in the center of the vertical axis. */
+}
+
+.nav-list li {
+    list-style: none;
+    /* Used to Remove Dot before list items*/
+    padding: 7px 4.6px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+
+.li a:active {
+    text-decoration: none;
+    color:rgb(230, 108, 74);
+
+}
+
+a.theme_color:hover,a.theme_color:active{
+    background: #1b9bff;
+
+}
+
+.logo {
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 55%;
+    border: 5px;
+    border-radius: 90px;
+}
+
+
+.background {
+    background:grey;
+    background-position: top;
+    /* background-size: cover; */
+    width: 100%;
+    /* width:1000px;
+    height:200px; */
+    /* background-blend-mode: darken; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+/*  **************  Navigation Section Ends  ***************  */
+
+/* Exercise Section Starts */
+.heading {
+    /* background: lightblue; */
+    background: rgba(88, 85, 85, 0.7) url('gym9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    width:89.4rem;
+    /* background-attachment: fixed; */
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 100px;
+    /* justify-content: center; */
+    font-size: 4.2rem;
+    margin-top: -47px;
+    height: 120px;
+    color:blanchedalmond;
+    font-weight: bold;
+    height:300px;
+    margin-bottom: -150px;
+}
+
+.home_heading {
+    /* background: yellow; */
+    background: rgba(88, 85, 85, 0.7) url('gym7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    width:88.88rem;
+    list-style: none;
+    /* margin:20px; */
+    border-radius: 10px;
+    padding: 7px 9px;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    height: 126rem;
+    color:blanchedalmond;
+    font-weight: bold;
+}
+
+.gym_heading {
+    /* background: pink; */
+    background: rgba(241, 237, 237, 0.912) url('gym4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed; 
+    width:88.88rem;
+    list-style: none;
+    padding: 7px 9px;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    height: 2100px;
+    color:blanchedalmond;
+    font-weight: bold;
+}
+
+.yoga_heading {
+    background: rgba(88, 85, 85, 0.7) url('gym6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed; 
+    width:88.88rem;
+    /* background: skyblue; */
+    list-style: none;
+    padding: 7px 9px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    height: 2100px;
+    color:blanchedalmond;
+    font-weight: bold;
+}
+
+.meditation_heading {
+    background: lightgreen;
+    list-style: none;
+    padding: 7px 9px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    height: 800px;
+    /* margin-bottom: -4000px; */
+    color:blanchedalmond;
+    font-weight: bold;
+}
+
+
+/* *************  Home Workout  ***************  */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -7000px;
+}
+
+/* Push-Up */
+
+.Push-Up {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 3rem;
+}
+
+.description1 {
+    font-size: 30px; 
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Pull-Up */
+
+.Pull-Up {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description2 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Plank */
+
+.Plank {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description3 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Free-Hand-Squat */
+
+.Free-Hand-Squat {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description4 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Lunges */
+
+.Lunges {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description5 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Mountain-Climbers */
+
+.Mountain-Climbers {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description6 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* *************  Gym Workout  ***************  */
+
+.Gym {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 250px;
+}
+
+/* Bench-Pess */
+
+.Bench-Pess {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description7 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Lat_Pull_Down */
+
+.Lat_Pull_Down {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description8 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Deadlift */
+
+.Deadlift {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description9 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Lateral_Raises */
+
+.Lateral_Raises {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description10 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Barbell-Squats */
+
+.Barbell-Squats {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description11 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Leg-Press */
+
+.Leg-Press {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description12 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* *************  Yoga  ***************  */
+
+.Yoga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 250px;
+}
+
+/* Vrikshasana */
+
+.Vrikshasana {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description13 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Garudasana */
+
+.Garudasana{
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description14 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Trikonasana */
+
+.Trikonasana {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description15 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Virabhadrasana */
+
+.Virabhadrasana {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description16 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* bhujangasana */
+
+.bhujangasana {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description17 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Sirsasana */
+
+.Sirsasana {
+    margin: 2.4rem;
+    padding: 1.2rem;
+    background: grey;
+    border-radius: 50px;
+}
+
+.description18 {
+    font-size: 30px;
+    margin-left: 170px;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* *************  Meditation  ***************  */
+
+.meditation{
+    margin-top:8px;
+}
+.medi_heading{
+    font-size: 270px;
+    text-align: center;
+    margin-top:-850px;
+    color:white;
+    font-variant-position: normal;
+    font-style: oblique;
+}
+
+.meditation_background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed; 
+    width:90rem;
+    height:90.2rem;
+    margin-top:-3.6rem;
+}
+
+h1 {
+    /* background-color:rgba(0,0,0,0.1) ;
+    padding: 20px ,60px; */
+    transition: 0.5s;
+
+}
+h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+
+
+/*  ************ Responsive Section ***********   */
+
+@media screen and (max-width: 720px)
+{
+
+    .Gym{
+        padding-left:-500px;
+    }
+
+    .Yoga{
+        padding-left:210px;
+    }
+
+    .meditation_background{
+    width:92.6rem;
+    margin-top:-6.9rem;
+    margin-left:-2.3rem;
+}
+    .medi_heading{
+        margin-left:8rem;
+    }
+
+}
+
+
+
+/* @media screen and (max-width: 720px)
+{
+    .meditation_background{
+    width:92.6rem;
+    margin-top:-6.9rem;
+    margin-left:-2.3rem;
+}
+} */
+
+
+/* @media screen and (min-width: 721px) and (max-width:1045px) */
+@media screen and (min-width: 721px) and (max-width:1045px)
+{
+    .heading{
+        width:99.5rem;
+    }
+
+    .home_heading{
+        width:99rem;
+    }
+
+    .home{
+        padding-left:4.8rem;
+    }
+
+    .gym_heading{
+        width:99rem;
+    }
+
+    .Gym{
+        margin-left:4.8rem;
+    }
+
+    .yoga_heading{
+        width:99rem;
+        /* margin-left:10px; */
+}
+
+    .Yoga{
+        padding-left:13.8rem;
+    }
+
+
+    .meditation_background{
+        width:100rem;
+        margin-top:-7rem;
+        /* margin-right:-6rem; */
+    }
+    .medi_heading{
+        margin-left:15rem;
+    }
+}
+
+
+
+
+@media screen and (min-width:1046) and (max-width: 349px)
+{
+    .heading{
+        margin-top:-3.9rem; 
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1211px)
+{
+
+/* *************  Home Workout  ***************  */
+
+.heading{
+    font-size:4.7rem;
+}
+
+.home_heading{
+    font-size: 4rem;
+    height:4200px;
+}
+
+.home {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: -7100px; */
+    margin-left:30.7rem;
+    margin-top:-843rem;
+}
+
+/* Push-Up */
+.Push-Up {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top:0.03rem;
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description1 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Pull-Up */
+.Pull-Up {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    /* margin-top:10px; */
+    margin-left:-30px;
+    margin-top:70px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description2 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Plank */
+.Plank {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    /* margin-top:10px; */
+    margin-left:-30px;
+    margin-top:70px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description3 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Free-Hand-Squat */
+.Free-Hand-Squat {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    /* margin-top:10px; */
+    margin-left:-30px;
+    margin-top:70px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description4 {
+    font-size: 2.5rem; 
+    width:300px;
+    margin-left:90px;
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Lunges */
+.Lunges {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    /* margin-top:10px; */
+    margin-left:-30px;
+    margin-top:70px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description5 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Mountain-Climbers */
+.Mountain-Climbers {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    /* margin-top:10px; */
+    margin-left:-30px;
+    margin-top:70px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description6 {
+    font-size: 2.5rem; 
+    width:400px;
+    margin-left:63px;
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+
+/* *************  Gym Workout  ***************  */
+
+
+
+
+.gym_heading{
+    font-size: 4rem;
+    padding-top:90px;
+    height:4200px;
+}
+
+.Gym {
+    display: block;  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: -7100px; */
+    margin-left:37rem;
+    margin-top:42rem;
+}
+
+/* Bench-Pess */
+.Bench-Pess {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    /* margin-top:-0.001rem; */
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description7 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Lat_Pull_Down */
+.Lat_Pull_Down {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description8 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Deadlift */
+.Deadlift {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description9 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Lateral_Raises */
+.Lateral_Raises {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description10 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Barbell-Squats */
+.Barbell-Squats {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description11 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Leg-Press */
+.Leg-Press {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:-30px;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description12 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+
+/* *************  Yoga  ***************  */
+
+.yoga_heading{
+    font-size: 4rem;
+    padding-top:90px;
+    height:4200px;
+    /* height:4100px; */
+}
+
+
+.Yoga {
+    /* display: block;  */
+    margin-top:35rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: -7100px; */
+    margin-left:500px;
+} 
+
+/* Vrikshasana */
+
+.Vrikshasana {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:2rem;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description13 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Garudasana */
+
+.Garudasana {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:2rem;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description14 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Trikonasana */
+
+.Trikonasana {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:2rem;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description15 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Virabhadrasana */
+
+.Virabhadrasana {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:2rem;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description16 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* bhujangasana */
+
+.bhujangasana {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:2rem;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description17 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+/* Sirsasana */
+
+.Sirsasana {
+    /* margin: 0.001rem 3rem; */
+    /* padding: 1rem 2rem; */
+    margin-top: 5rem;
+    margin-left:2rem;
+    background: purple;
+    border-radius: 3rem;
+    width:28.5rem;
+}
+
+.description18 {
+    font-size: 2.5rem; 
+    /* margin-left: 10.2rem; */
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+.meditation_background{
+    margin-top:-6.7rem;
+}
+.medi_heading{
+    margin-left:110px;
+}
+
+}
+
+
+
+
+
+/* @media screen and (max-width: 1335px)
+{
+
+    .meditation_background{
+        width:96.77rem;
+        height:90.2rem;
+        margin-top:-3.6rem;
+    }
+    .medi_heading{
+        margin-left:100px;
+        text-align: center;
+    }
+
+} */
+
+
+
+/*  ################  HAMBURGER-MENU Section  ################  */
+
+@media screen and (min-width:720px)
+{
+    .navigation{
+        display:none;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    .exercises{
+        margin-top:12px;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+
+    .navigation{
+        display:flex;
+        height:7.12rem;
+        background:grey;
+        width:90.2rem;
+        position: fixed;
+        margin-top:-0.77rem;
+        /* margin:0 auto; */
+        /* width:080px; */
+        /* height:300px; */
+        /* width:40% */
+    }
+    /* .left_side{
+    
+    } */
+    
+    .logo {
+        width: 13%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position:fixed;
+        float:left;
+        /* float:left; */
+    }
+    
+    .logo img {
+        width: 55%;
+        border: 5px;
+        border-radius: 90px;
+        margin:7px 0 0 20px;
+        /* background-attachment: fixed; */
+    }
+    
+    #hamburger{
+        /* z-index: 10;   */
+        /* position: absolute; */
+        float:right;
+    }
+    
+    #menu{
+        width:35px;
+        height:30px;
+        margin:40px 150px 20px 20rem ;
+    }
+    
+    .bar{
+        height:8px;
+        width:55px;
+        margin-left:55.2rem;
+        background-color:whitesmoke;
+        /* float:right; */
+    }
+    
+    #bar1{
+        transform:translateY(-5px);
+    }
+    
+    #bar3{
+        transform:translateY(5px);
+    }
+    
+    .nav{
+        padding: 0;
+        margin:150px -120px 0 20px;
+        transition:2s ease;
+        display:none;
+    }
+    
+    .nav li{
+        list-style:none;
+        padding:10px 0;
+        margin:13px;
+        background-color: soild white;
+    }
+    
+    .nav li a{
+        color:white;
+        text-decoration:none;
+        font-size: 2.55rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+    }
+    
+    .nav li a:hover{
+        border:1px soild white;
+    }
+    
+    
+    .icon .bar{
+        background-color: whitesmoke;
+        transition:1s ease;
+    }
+    
+    .icon #bar1{
+        transform:translateY(4px) rotate(-45deg);
+    }
+    
+    /* Only two lines are needed for making the cross so making the secong line opaque */
+    .icon #bar2{
+        opacity:0;
+    }
+    
+    .icon #bar3{
+        transform:translateY(-6px) rotate(45deg);
+    }
+    
+    
+    .change{
+        transition:6s ease;
+        background:rgba(58, 56, 56, 0.9);
+        border-radius:5px;
+        /* padding:10px; */
+        height:42rem;
+        margin-top:0.8rem;
+        margin-left:55rem;
+        position:absolute;
+        z-index: 500;
+        width:30rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .change{
+        width:40rem;
+        margin-left:45rem;
+        height:60rem;
+        margin-top:1rem;
+    }
+    .nav li a{
+        font-size:4rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .change{
+        width:80rem;
+        margin-left:5rem;
+        height:110rem;
+        margin-top:1rem;
+    }
+    .nav li{
+        margin:2.5rem;
+    }
+
+    .nav li a{
+        font-size:7rem;
+        padding:10px 200px 10px 205px;
+    }
+}
+
+
+
+
+

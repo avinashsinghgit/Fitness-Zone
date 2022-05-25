@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    /* background-image : url('Login_Page/image.jpeg'); */
+}
+
+.formContainer{
+    background:url(./login4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image : url('../Login_Page/image.jpeg'); */
+    text-align: center;
+    /* margin-top:100px; */
+    height:100vh;
+}
+
+.heading
+{
+    font-size: 70px;
+    margin-top:0px;
+}
+
+.sare
+{
+    margin: 500px;
+    padding: 40px;
+    margin-top:-20px;
+    /* background: url('Login_Page/image.jpeg'); */
+    background:url(./loggg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size:70px;
+    border-radius: 40px;
+    margin-top: 80px;
+    /* Animation */
+    transition:transform 0.2s;
+    /* height:100%; */
+    /* margin: 100px 100px; */
+}
+
+
+/* for animation */
+.sare:hover{
+    /* (101% zoom) */
+    transform:scale(1.1)
+}
+
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 23px;
+    line-height: 1.5;
+    border-radius: 15px;
+}
+
+.sign_wale
+{
+    font-size:35px;
+    margin-left:20px;
+    /* background: grey; */
+}
+
+.names{
+    font-size:20px;
+    border-radius:10px;
+    background:papayawhip;
+    transition:transform 0.2s;
+}
+
+.names:hover{
+    transform:scale(1.1)
+}
+@media screen and (max-width: 700px){
+.sare
+{
+    margin: 50px;
+    padding: 20px;
+    margin-top:-40px;
+    /* background: url('Login_Page/image.jpeg'); */
+    background:url(./loggg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size:70px;
+    border-radius: 20px;
+    margin-top: 140px;
+}
+
+
+
+
+
+
+
+}
+    

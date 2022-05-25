@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    background:grey;
+}
+
+.navigation{
+    display:flex;
+    height:100px;
+    /* margin:0 auto; */
+    /* width:080px; */
+    /* height:300px; */
+    /* width:40% */
+}
+/* .left_side{
+
+} */
+
+.logo {
+    width: 13%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position:fixed;
+    float:left;
+    /* float:left; */
+}
+
+.logo img {
+    width: 55%;
+    border: 5px;
+    border-radius: 90px;
+    margin:7px 0 0 20px;
+    /* background-attachment: fixed; */
+}
+
+#hamburger{
+    /* z-index: 10;   */
+    /* position: absolute; */
+    float:right;
+}
+
+#menu{
+    width:35px;
+    height:30px;
+    margin:20px 150px 20px 27rem ;
+}
+
+.bar{
+    height:5px;
+    width:45px;
+    margin-left:55.2rem;
+    background-color:white;
+    /* float:right; */
+}
+
+#bar1{
+    transform:translateY(-4px);
+}
+
+#bar3{
+    transform:translateY(4px);
+}
+
+.nav{
+    padding: 0;
+    margin:150px -120px 0 20px;
+    transition:1s ease;
+    display:none;
+}
+
+.nav li{
+    list-style:none;
+    padding:10px 0;
+    margin:7px;
+    background-color: soild white;
+}
+
+.nav li a{
+    color:white;
+    text-decoration:none;
+    font-size: 20px ;
+    font-weight: bold;
+    background-color: red;
+    padding:10px;
+}
+
+.nav li a:hover{
+    border:1px soild white;
+}
+
+
+.icon .bar{
+    background-color: white;
+}
+
+.icon #bar1{
+    transform:translateY(4px) rotate(-45deg);
+}
+
+/* Only two lines are needed for making the cross so making the secong line opaque */
+.icon #bar2{
+    opacity:0;
+}
+
+.icon #bar3{
+    transform:translateY(-6px) rotate(45deg);
+}
+
+
+.change{
+    background:orange;
+    /* padding:10px; */
+    height:500px;
+    margin-top:10px;
+    margin-left:1070px;
+    position:absolute;
+    z-index: -100;
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+
+
+
+
+

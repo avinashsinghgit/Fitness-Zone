@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  *****  Navigation Section Begins  ******  */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: #002d60;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    /* background-color: black; */
+    display: flex;
+    /* Arranges all the items from vertical to horizontal level */
+    justify-content: center;
+    align-items: center;
+    /* Alligns the items in the center of the vertical axis. */
+}
+
+.nav-list li {
+    list-style: none;
+    /* Used to Remove Dot before list items*/
+    padding: 7px 4.6px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+a.active,a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+}
+
+.rightnav {
+    width: 40%;
+    /* background-color: blueviolet; */
+    text-align: right;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 55%;
+    border: 5px;
+    border-radius: 90px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 60px;
+}
+
+.background {
+    /* background: rgba(0, 0, 0, 0.7) url('nutrition.jpg'); */
+    background:#7acbcf;
+    background-position: top;
+    /* background-size: cover; */
+    width: 100%;
+    /* width:1000px;
+    height:200px; */
+    /* background-blend-mode: darken; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.btn-sm {
+    margin-right: 80px;
+}
+
+/*  *****  Navigation Section Ends  ******  */
+
+
+/*  *****  nutrition  ******  */
+
+.nutrition {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(nutrition.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 100;
+    font-variant-position: normal;
+    font-style: oblique;
+}
+
+h1 {
+    /* background-color:rgba(0,0,0,0.1) ;
+    padding: 20px ,60px; */
+    transition: 0.5s;
+
+}
+h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+
+/* ******  Healthy Section  ******* */
+
+.healthy{
+    background: linear-gradient(rgba(162, 68, 68, 0.6),rgba(0,0,0,0.3)),url(shadow.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+}
+
+.heading{
+    padding-top: 70px;
+    text-align: center;
+    font-size:80px;
+    color:rgb(242, 255, 0);
+    
+    
+}
+
+.health{
+    padding:60px 20px;
+}
+
+.sent_healthy{
+    text-align: justify;
+    margin-left:580px;
+    margin-top:-540px;
+    font-size:30px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+
+.images{
+    padding:20px 20px;
+}
+
+.sentence{
+    text-align: justify;
+    margin-left:580px;
+    margin-top:-540px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+/* ******  Protein Section  ******* */
+
+.pro{
+    background: linear-gradient(rgba(241, 21, 21, 0.2),rgba(0,0,0,0.4)),url(mashroom.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+}
+
+.protein{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:200px;
+    color:white;
+}
+
+.psent{
+    text-align: justify;
+    margin-top:-165px;
+    margin-left:570px;
+    font-size:23px;
+    color:whitesmoke;
+    font-weight:bold;
+}
+
+
+/* ******  Carbohydrate Section  ******* */
+
+.carb{
+    background: linear-gradient(rgba(122, 30, 99, 0.393),rgba(0,0,0,0.4)),url(white3d.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+}
+
+.carbohydrate{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:70px;
+    color:whitesmoke;
+}
+
+.csent{
+    text-align: justify;
+    margin-top:-165px;
+    margin-left:570px;
+    font-size:22px;
+    color:whitesmoke;
+    font-weight:bold;
+}
+
+/* ******  Dietary_Fibre Section  ******* */
+
+.fibre{
+    background: linear-gradient(rgba(28, 217, 221, 0.456),rgba(0,0,0,0.4)),url(diet\ fibers.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+}
+
+.Dietary_Fibre{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:140px;
+    color:whitesmoke;
+}
+
+.dsent{
+    text-align: justify;
+    margin-top:-165px;
+    margin-left:570px;
+    font-size:23px;
+    color:whitesmoke;
+    font-weight:bold;
+}
+
+/* ******  Mineral Section  ******* */
+
+.min{
+    background: linear-gradient(rgba(89, 5, 86, 0.374),rgba(0,0,0,0.4)),url(min.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+    /* clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%, 0% 100% ); */
+}
+
+.Mineral{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:175px;
+    color:whitesmoke;
+}
+
+.msent{
+    text-align: justify;
+    margin-top:-165px;
+    margin-left:570px;
+    font-size:23px;
+    color:whitesmoke;
+    font-weight:bold;
+}
+
+
+/* ******  Vitamin Section  ******* */
+
+.vita{
+    background: linear-gradient(rgba(89, 80, 89, 0.374),rgba(0,0,0,0.6)),url(vit.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+
+}
+
+.Vitamin{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:175px;
+    color:whitesmoke;
+}
+
+.vsent{
+    text-align: justify;
+    margin-top:-165px;
+    margin-left:570px;
+    font-size:23px;
+    color:whitesmoke;
+    font-weight:bold;
+}
+
+/* ******  Water Section  ******* */
+
+.wat{
+    background: linear-gradient(rgba(75, 39, 181, 0.06),rgba(0,0,0,0.6)),url(wat.jpg);
+    /* background-image: url(./medi.jpg); */
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height:900px;
+}
+
+.Water{
+    font-size:50px;
+    font-weight: bold;
+    margin-left:200px;
+    color:whitesmoke;
+}
+
+.wsent{
+    text-align: justify;
+    margin-top:-150px;
+    margin-left:570px;
+    font-size:23px;
+    color:whitesmoke;
+    font-weight:bold;
+}

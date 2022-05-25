@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lstyle.css">
+    <!-- // Creating the Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <!-- For Authentication Purpose -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="form.js"></script>
+    <title>Login System</title>
+</head>
+
+<body>
+    <div class="formContainer">
+        <!-- <p class="heading"> Enter Credentials: </p> -->
+        <!-- <h1 class="heading"></h1> -->
+        <br>
+        <br>
+        <br>
+        <div class="sare">
+            <!-- <div class="email_wala"> -->
+                <input type="email" placeholder="  Email Id" id="email"><br>
+            <!-- </div> -->
+            <input type="password" placeholder="  Password" id="password"><br>
+            <br>
+            <div class="sign_wale">
+                <button onclick="signUp()" id="signUp"> <p class="names"> SignUp </p> </button>
+                <button onclick="signIn()" id="signIp"> <p class="names">SignIn </p> </button>
+                <!-- <button onclick="signOut()" id="signOut"> <p class="names"> SignOut </p> </button> -->
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

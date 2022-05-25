@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    position:fixed;
+    display:flex;
+    background-image: url('About_Page/backgroung.jpg');
+}
+
+.nav-list{
+    margin: 0;
+    padding: 0;
+    width:80%;
+    /* background-color: black; */
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+.nav-list li{
+    list-style:none;  /* Used to Remove Dot before list items*/
+    padding: 7px 4.6px;
+}
+
+.nav-list li a{
+    text-decoration:none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.nav-list li a:hover{
+    text-decoration:none;
+    color: yellow;
+    
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+
+.rightnav{
+    width:40%;
+    /* background-color: blueviolet; */
+    text-align:right;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right:20px;
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo  img{
+    width: 55%;
+    border: 5px ;
+    border-radius: 90px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 60px;
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.5)),url(./background.jpg);
+    /* background-image: url(./about.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed;
+}
+
+.btn-sm{
+    margin-right: 80px;
+}
+
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-indent: 30px */
+    height:35%;
+}
+
+.about{
+    height:300vh;
+}
+
+.firstHalf{
+    width:80%;
+    margin-top: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.heading{
+    font-size: 70px;
+    margin-left:440px;
+}
+
+.text-one{
+    font-size:30px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.text-two{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.text-three{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/*   ***********  Responsive Section  ************   */
+
+
+@media screen and (min-width: 360px)
+{
+    .firstHalf{
+        justify-content: center;
+    }
+
+    .heading{
+        font-size:40px;
+        margin-left:100px;
+        margin-top:250px;
+    }
+
+    .text-one
+    {
+        font-size:22px;
+    }
+    .text-two
+    {
+        font-size:22px;
+    }
+    .text-three
+    {
+        font-size:25px;
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    .firstHalf{
+        justify-content: center;
+    }
+
+    .heading{
+        font-size:40px;
+        margin-left:140px;
+        margin-top:40px;
+    }
+
+    .text-one
+    {
+        font-size:22px;
+    }
+    .text-two
+    {
+        font-size:22px;
+    }
+    .text-three
+    {
+        font-size:25px;
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    .firstHalf{
+        justify-content: center;
+    }
+
+    .heading{
+        font-size:40px;
+        margin-left:140px;
+        margin-top:40px;
+    }
+
+    .text-one
+    {
+        font-size:22px;
+    }
+    .text-two
+    {
+        font-size:22px;
+    }
+    .text-three
+    {
+        font-size:25px;
+    }
+}
+
+/* @media screen and (min-width: 1277px)
+{
+
+
+    .firstHalf{
+        justify-content: center;
+    }
+
+    .heading{
+        font-size:40px;
+        margin-left:400px;
+        margin-top:-250px;
+    }
+
+    .text-one
+    {
+        font-size:22px;
+    }
+    .text-two
+    {
+        font-size:22px;
+    }
+    .text-three
+    {
+        font-size:25px;
+    }
+    
+} */
