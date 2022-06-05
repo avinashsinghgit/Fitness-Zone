@@ -21,16 +21,21 @@
         <br>
         <br>
         <br>
-        <div class="sare">
+        <div class="items">
             <!-- <div class="email_wala"> -->
-                <input type="email" placeholder="  Email Id" id="email"><br>
+            <input type="email" placeholder="  Email Id" id="email" class="email_background"><br>
             <!-- </div> -->
             <input type="password" placeholder="  Password" id="password"><br>
             <br>
-            <div class="sign_wale">
-                <button onclick="signUp()" id="signUp"> <p class="names"> SignUp </p> </button>
-                <button onclick="signIn()" id="signIp"> <p class="names">SignIn </p> </button>
+            <div class="sign_items">
+                <button onclick="signUp()" id="signUp"> <p class="names"> <a href="../Home_Page/index.html"> SignUp </a> </p> </button>
+                <button onclick="signIn()" id="signIn"> <p class="names"> <a href="../Home_Page/index.html"> SignIn </a> </p> </button>
                 <!-- <button onclick="signOut()" id="signOut"> <p class="names"> SignOut </p> </button> -->
+            </div>
+
+            <!-- Forget Password -->
+            <div>
+                <button onclick="Forget_Password()" id="forget_password"> <p class="forget"> <a href="../forget.html"> Forget Password ? </a> </p> </button>
             </div>
         </div>
 

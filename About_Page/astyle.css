@@ -3,88 +3,100 @@
     padding:0;
 }
 
-.navbar{
-    position:fixed;
-    display:flex;
-    background-image: url('About_Page/backgroung.jpg');
+/*  **************  Navigation Section Begins  ***************  */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: blue;
 }
 
-.nav-list{
+.nav-list {
     margin: 0;
     padding: 0;
-    width:80%;
+    width: 100%;
     /* background-color: black; */
     display: flex;
+    /* Arranges all the items from vertical to horizontal level */
     /*justify-content: center;*/
     align-items: center;
+    /* Alligns the items in the center of the vertical axis. */
 }
 
-.nav-list li{
-    list-style:none;  /* Used to Remove Dot before list items*/
+.nav-list li {
+    list-style: none;
+    /* Used to Remove Dot before list items*/
     padding: 7px 4.6px;
 }
 
-.nav-list li a{
-    text-decoration:none;
+.nav-list li a {
+    text-decoration: none;
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
+    font-weight: bold;
+
 }
 
-.nav-list li a:hover{
-    text-decoration:none;
+.nav-list li a:hover {
+    text-decoration: none;
     color: yellow;
-    
+
 }
 
-a.active,a:hover{
+
+.li a:active {
+    text-decoration: none;
+    color:rgb(230, 108, 74);
+
+}
+
+a.theme_color:hover,a.theme_color:active{
     background: #1b9bff;
-    transition: 0.5s;
+
 }
 
-.rightnav{
-    width:40%;
-    /* background-color: blueviolet; */
-    text-align:right;
-    padding: 10px;
-    margin-top: 30px;
-    margin-right:20px;
-}
-
-.logo{
-    width:20%;
-    display:flex;
+.logo {
+    width: 13%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo  img{
+.logo img {
     width: 55%;
-    border: 5px ;
+    border: 5px;
     border-radius: 90px;
 }
 
-#search{
-    padding: 5px;
-    font-size: 17px;
-    border: 2px solid grey;
-    border-radius: 60px;
+
+.background {
+    background:rgba(60, 61, 56);
+    background-position: top;
+    /* background-size: cover; */
+    width: 100%;
+    /* width:1000px;
+    height:200px; */
+    /* background-blend-mode: darken; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
 }
 
-.background{
+/*  **************  Navigation Section Ends  ***************  */
+
+.about_background{
     background: linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.5)),url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center;  */
+    width:90rem;
+    /* height:50rem; */
     /* background-image: url(./about.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    background-attachment: fixed;
 }
 
-.btn-sm{
-    margin-right: 80px;
-}
 
 .box-main{
     display:flex;
@@ -97,7 +109,7 @@ a.active,a:hover{
 }
 
 .about{
-    height:300vh;
+    height:200vh;
 }
 
 .firstHalf{
@@ -110,134 +122,241 @@ a.active,a:hover{
 }
 
 .heading{
-    font-size: 70px;
-    margin-left:440px;
+    font-size: 4.3rem;
+    margin-left:26.6rem;
 }
 
 .text-one{
-    font-size:30px;
+    font-size:2rem;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 3rem;
 }
 
 .text-two{
-    font-size: 30px;
+    font-size: 2rem;
     margin-top: 10px;
     margin-left: 20px;
 }
 
 .text-three{
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 10px;
     margin-left: 20px;
 }
 
-/*   ***********  Responsive Section  ************   */
 
+/*  ################  HAMBURGER-MENU Section  ################  */
 
-@media screen and (min-width: 360px)
+@media screen and (min-width:720px)
 {
-    .firstHalf{
-        justify-content: center;
-    }
-
-    .heading{
-        font-size:40px;
-        margin-left:100px;
-        margin-top:250px;
-    }
-
-    .text-one
-    {
-        font-size:22px;
-    }
-    .text-two
-    {
-        font-size:22px;
-    }
-    .text-three
-    {
-        font-size:25px;
+    .navigation{
+        display:none;
     }
 }
 
-@media screen and (min-width: 600px)
+@media screen and (max-width:720px)
 {
-    .firstHalf{
-        justify-content: center;
+    .about_background{
+        margin-top:12px;
+    }
+
+    .about{
+        height:140rem;
     }
 
     .heading{
-        font-size:40px;
-        margin-left:140px;
-        margin-top:40px;
+        margin:40rem 0 0 25rem;
+        font-size:7rem;
+    }
+    .text-one{
+        /* margin-top:20rem; */
+        font-size:3rem;
+    }
+    .text-two{
+        font-size:3rem;
+    }
+    .text-three{
+        font-size:4.5rem;
     }
 
-    .text-one
-    {
-        font-size:22px;
-    }
-    .text-two
-    {
-        font-size:22px;
-    }
-    .text-three
-    {
-        font-size:25px;
-    }
-}
-
-@media screen and (min-width: 600px)
-{
-    .firstHalf{
-        justify-content: center;
+    .navbar{
+        display:none;
     }
 
-    .heading{
-        font-size:40px;
-        margin-left:140px;
-        margin-top:40px;
-    }
 
-    .text-one
-    {
-        font-size:22px;
+    .navigation{
+        display:flex;
+        height:7.12rem;
+        background:grey;
+        width:90.2rem;
+        position: fixed;
+        margin-top:-0.77rem;
+        /* margin:0 auto; */
+        /* width:080px; */
+        /* height:300px; */
+        /* width:40% */
     }
-    .text-two
-    {
-        font-size:22px;
-    }
-    .text-three
-    {
-        font-size:25px;
-    }
-}
-
-/* @media screen and (min-width: 1277px)
-{
-
-
-    .firstHalf{
-        justify-content: center;
-    }
-
-    .heading{
-        font-size:40px;
-        margin-left:400px;
-        margin-top:-250px;
-    }
-
-    .text-one
-    {
-        font-size:22px;
-    }
-    .text-two
-    {
-        font-size:22px;
-    }
-    .text-three
-    {
-        font-size:25px;
+    /* .left_side{
+    
+    } */
+    
+    .logo {
+        width: 13%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position:fixed;
+        float:left;
+        /* float:left; */
     }
     
-} */
+    .logo img {
+        width: 55%;
+        border: 5px;
+        border-radius: 90px;
+        margin:7px 0 0 20px;
+        /* background-attachment: fixed; */
+    }
+    
+    #hamburger{
+        /* z-index: 10;   */
+        /* position: absolute; */
+        float:right;
+    }
+    
+    #menu{
+        width:35px;
+        height:30px;
+        margin:40px 150px 20px 20rem ;
+    }
+    
+    .bar{
+        height:8px;
+        width:55px;
+        margin-left:55.2rem;
+        background-color:whitesmoke;
+        /* float:right; */
+    }
+    
+    #bar1{
+        transform:translateY(-5px);
+    }
+    
+    #bar3{
+        transform:translateY(5px);
+    }
+    
+    .nav{
+        padding: 0;
+        margin:150px -120px 0 20px;
+        transition:2s ease;
+        display:none;
+    }
+    
+    .nav li{
+        list-style:none;
+        padding:10px 0;
+        margin:13px;
+        background-color: soild white;
+    }
+    
+    .nav li a{
+        color:white;
+        text-decoration:none;
+        font-size: 2.55rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+    }
+    
+    .nav li a:hover{
+        border:1px soild white;
+    }
+    
+    
+    .icon .bar{
+        background-color: whitesmoke;
+        transition:1s ease;
+    }
+    
+    .icon #bar1{
+        transform:translateY(4px) rotate(-45deg);
+    }
+    
+    /* Only two lines are needed for making the cross so making the secong line opaque */
+    .icon #bar2{
+        opacity:0;
+    }
+    
+    .icon #bar3{
+        transform:translateY(-6px) rotate(45deg);
+    }
+    
+    
+    .change{
+        transition:6s ease;
+        background:rgba(58, 56, 56, 0.9);
+        border-radius:5px;
+        /* padding:10px; */
+        height:42rem;
+        margin-top:0.8rem;
+        margin-left:55rem;
+        position:absolute;
+        z-index: 500;
+        width:30rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .change{
+        width:40rem;
+        margin-left:45rem;
+        height:60rem;
+        margin-top:1rem;
+    }
+    .nav li a{
+        font-size:4rem;
+    }
+    .about{
+        height:270rem;
+    }
+    .heading{
+        margin:120rem 0 0 20rem;
+        font-size:10rem;
+    }
+    .text-one{
+        margin-top:10rem;
+        font-size:5rem;
+    }
+    .text-two{
+        font-size:5rem;
+    }
+    .text-three{
+        font-size:6.5rem;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .change{
+        width:80rem;
+        margin-left:5rem;
+        height:110rem;
+        margin-top:1rem;
+    }
+    .nav li{
+        margin:2.5rem;
+    }
+
+    .nav li a{
+        font-size:7rem;
+        padding:10px 200px 10px 205px;
+    }
+}

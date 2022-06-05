@@ -5,6 +5,8 @@
 }
 
 .formContainer{
+    /* background:url(./loggg.jpg); */
+    /* background:url(./login4.jpg); */
     background:url(./login4.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -20,18 +22,21 @@
     margin-top:0px;
 }
 
-.sare
+.items
 {
-    margin: 500px;
+    /* margin: 500px; */
     padding: 40px;
-    margin-top:-20px;
+    /* margin-top:-20px; */
     /* background: url('Login_Page/image.jpeg'); */
-    background:url(./loggg.jpg);
-    background-position: center;
+    background:url(./items_background.jpeg);
+    background-position: center center;
     background-repeat: no-repeat;
+    width:500px;
+    margin:6rem 0 0 24.5rem;
+    background-attachment: fixed;
     font-size:70px;
     border-radius: 40px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     /* Animation */
     transition:transform 0.2s;
     /* height:100%; */
@@ -40,20 +45,44 @@
 
 
 /* for animation */
-.sare:hover{
+.items:hover{
     /* (101% zoom) */
     transform:scale(1.1)
 }
 
+/* .email_background{
+    background-color: white;
+} */
 
 input,
 input::-webkit-input-placeholder {
     font-size: 23px;
+    width:18rem;
     line-height: 1.5;
     border-radius: 15px;
+    color:rgba(0, 0, 0, 0.567);
+    background:rgba(255, 239, 213, 0.578);
 }
 
-.sign_wale
+#signUp{
+    border-radius:8px;
+    width:6rem;
+    height:2.5rem;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+
+#signIn{
+    border-radius:8px;
+    width:6rem;
+    height:2.5rem;
+}
+
+
+.sign_items
 {
     font-size:35px;
     margin-left:20px;
@@ -67,23 +96,35 @@ input::-webkit-input-placeholder {
     transition:transform 0.2s;
 }
 
+
 .names:hover{
-    transform:scale(1.1)
+    transition:scale(1.4);
 }
-@media screen and (max-width: 700px){
+
+
+/* #forget_password{
+    margin-top:20px;
+    border-radius:10px;
+    height:30px;
+    width:130px;
+    text-decoration:none;
+} */
+
+
+/* @media screen and (max-width: 700px){
 .sare
-{
-    margin: 50px;
+{ */
+    /* margin: 50px;
     padding: 20px;
-    margin-top:-40px;
+    margin-top:-40px; */
     /* background: url('Login_Page/image.jpeg'); */
-    background:url(./loggg.jpg);
+    /* background:url(./loggg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     font-size:70px;
     border-radius: 20px;
-    margin-top: 140px;
-}
+    margin-top: 140px; */
+/* } */
 
 
 

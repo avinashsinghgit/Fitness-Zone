@@ -6,27 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="astyle.css">
+    <script src="../Home_Page/script.js"></script>
 </head>
 <body>
+
+    <!-- HamBurger Section -->
+    <div class="navigation">
+        <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>         
+        <div id="hambuger">
+            <div id="menu" onclick="onClickMenu()" >
+                <div id = "bar1" class="bar"></div>
+                <div id = "bar2" class="bar"></div>
+                <div id = "bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="../Home_Page/index.html">Home</a></li>
+                <li><a href="../About_Page/about.html">About</a></li>
+                <li><a href="../Exercise_Page/exercise.html">Exercise</a></li>
+                <li><a href="../Nutrition_Page/nutrition.html">Nutrition</a></li>
+                <li><a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1">Find Gyms</a></li>
+                <li><a href="../Resources_Page/resources.html">Resources</a></li>
+                <li><a href="../Contact_Page/contact.html">Consult Experts</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+
     <nav class="navbar background">
         <ul class="nav-list">
             <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>
-            <li> <a href = "../Home_Page/index.html">Home</a> </li>
-            <li> <a href = "../About_Page/about.html">About</a> </li>
-            <li> <a href = "../Exercise_Page/exercise.html">Exercises</a> </li>
-            <li> <a href = "../Nutrition_Page/nutrition.html">Nutrition</a> </li>
-            <li> <a href = "https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1">Find Gyms</a></li>
-            <li> <a href="../Resources_Page/resources.html">Resources</a> </li>
-            <li> <a href="../Contact_Page/contact.html" target="_blank" >Consult Experts</a> </li>
+            <li> <a href="../Home_Page/index.html" class="theme_color">Home</a> </li>
+            <li> <a href="../About_Page/about.html" class="theme_color">About</a> </li>
+            <li> <a href="../Exercise_Page/exercise.html" class="theme_color">Exercises</a> </li>
+            <li> <a href="../Nutrition_Page/nutrition.html" class="theme_color">Nutrition</a> </li>
+            <li> <a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1" class="theme_color">Find
+                    Gyms</a></li>
+            <li> <a href="../Resources_Page/resources.html" class="theme_color">Resources</a> </li>
+            <li> <a href="../Contact_Page/contact.html" target="_blank" class="theme_color">Consult Experts</a> </li>
+            <!-- <li> <a href="../Fitness_Center/fit.html" target="_blank">Our</a> </li> -->
         </ul>
-        <div class="rightnav">
-            <input type = "text" name = "search" id = "search">
-            <button class="btn btn-sm"> <a href = "#search"><img src="search.png" alt="search" width="20" height="20"></a></button>
-        </div>
-
     </nav>
+
+    <!-- Navigation Section Ends -->
     
-    <section class="background about">
+    <section class="about_background about">
         <div class="box-main">
             <div class="firstHalf">
                 <h1 class="heading">About</h1>

@@ -49,12 +49,19 @@
   firebase.auth().onAuthStateChanged((user)=>{
     if(user){
       var email = user.email;
-      alert("Active user "+email);
+      // alert("Active user "+email);
 
     }else{
       alert("No Active user Found")
     }
   })
+
+  // // Forget password
+  // function Forget_Password(){
+  //   auth.Forget_Password();
+  // }
+
+
 
   // const firebaseConfig = {
   //   apiKey: "AIzaSyApNLhaVt4R5oIrwQ0OWGtZyr-DnEL8Ff8",
