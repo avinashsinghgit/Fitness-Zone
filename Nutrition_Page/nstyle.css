@@ -3,22 +3,37 @@
     padding: 0;
 }
 
-/*  *****  Navigation Section Begins  ******  */
+
+/* For Animation */
+
+/* Put below single line only inside the class*/
+
+/* animation:nutrition 15s linear infinite;  */
+
+/*
+@keyframes nutrition{
+    0%{background-position:0 0;}
+    50%{background-position:50px 0;}
+    100%{background-position:-500px 0;}
+} */
+
+
+/*  **************  Navigation Section Begins  ***************  */
 
 .navbar {
     position: fixed;
     display: flex;
-    background-color: #002d60;
+    background-color: blue;
 }
 
 .nav-list {
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
     /* background-color: black; */
     display: flex;
     /* Arranges all the items from vertical to horizontal level */
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     /* Alligns the items in the center of the vertical axis. */
 }
@@ -45,22 +60,20 @@
 
 }
 
-a.active,a:hover {
-    background: #1b9bff;
-    transition: 0.5s;
+
+.li a:active {
+    text-decoration: none;
+    color:rgb(230, 108, 74);
+
 }
 
-.rightnav {
-    width: 40%;
-    /* background-color: blueviolet; */
-    text-align: right;
-    padding: 10px;
-    margin-top: 30px;
-    margin-right: 20px;
+a.theme_color:hover,a.theme_color:active{
+    background: #1b9bff;
+
 }
 
 .logo {
-    width: 20%;
+    width: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,16 +85,9 @@ a.active,a:hover {
     border-radius: 90px;
 }
 
-#search {
-    padding: 5px;
-    font-size: 17px;
-    border: 2px solid grey;
-    border-radius: 60px;
-}
 
 .background {
-    /* background: rgba(0, 0, 0, 0.7) url('nutrition.jpg'); */
-    background:#7acbcf;
+    background:grey;
     background-position: top;
     /* background-size: cover; */
     width: 100%;
@@ -92,30 +98,29 @@ a.active,a:hover {
     /* background-size: cover; */
 }
 
-.btn-sm {
-    margin-right: 80px;
-}
-
-/*  *****  Navigation Section Ends  ******  */
+/*  **************  Navigation Section Ends  ***************  */
 
 
 /*  *****  nutrition  ******  */
 
 .nutrition {
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(nutrition.jpg);
-    /* background-image: url(./medi.jpg); */
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    height: 60rem;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    font-size: 4.5rem;
     font-weight: 100;
     font-variant-position: normal;
     font-style: oblique;
 }
+
 
 h1 {
     /* background-color:rgba(0,0,0,0.1) ;
@@ -131,19 +136,23 @@ h1:hover{
 
 /* ******  Healthy Section  ******* */
 
+
 .healthy{
     background: linear-gradient(rgba(162, 68, 68, 0.6),rgba(0,0,0,0.3)),url(shadow.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    height:900px;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
+    height:54rem;
 }
 
 .heading{
     padding-top: 70px;
     text-align: center;
-    font-size:80px;
+    font-size:5rem;
     color:rgb(242, 255, 0);
     
     
@@ -157,23 +166,45 @@ h1:hover{
     text-align: justify;
     margin-left:580px;
     margin-top:-540px;
-    font-size:30px;
+    font-size:1.5rem;
     font-weight: bold;
     color: #fff;
 
 }
 
+/*   All Sections Background Images    */
 
-
-.images{
+.protein_image{
     padding:20px 20px;
+    border-radius:3rem;
+}
+
+.carbohydrate_image{
+    padding:20px 20px;
+    border-radius:3rem;
+}
+.fibre_image{
+    padding:20px 20px;
+    border-radius:3rem;
+}
+.mineral_image{
+    padding:20px 20px;
+    border-radius:3rem;
+}
+.vitamin_image{
+    padding:20px 20px;
+    border-radius:3rem;
+}
+.water_image{
+    padding:20px 20px;
+    border-radius:3rem;
 }
 
 .sentence{
     text-align: justify;
     margin-left:580px;
     margin-top:-540px;
-    font-size:30px;
+    font-size:2rem;
     font-weight: bold;
 }
 
@@ -182,14 +213,17 @@ h1:hover{
 .pro{
     background: linear-gradient(rgba(241, 21, 21, 0.2),rgba(0,0,0,0.4)),url(mashroom.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
     height:900px;
 }
 
 .protein{
-    font-size:50px;
+    font-size:3.2rem;
     font-weight: bold;
     margin-left:200px;
     color:white;
@@ -199,7 +233,7 @@ h1:hover{
     text-align: justify;
     margin-top:-165px;
     margin-left:570px;
-    font-size:23px;
+    font-size:1.5rem;
     color:whitesmoke;
     font-weight:bold;
 }
@@ -210,14 +244,17 @@ h1:hover{
 .carb{
     background: linear-gradient(rgba(122, 30, 99, 0.393),rgba(0,0,0,0.4)),url(white3d.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
     height:900px;
 }
 
 .carbohydrate{
-    font-size:50px;
+    font-size:3.2rem;
     font-weight: bold;
     margin-left:70px;
     color:whitesmoke;
@@ -227,7 +264,7 @@ h1:hover{
     text-align: justify;
     margin-top:-165px;
     margin-left:570px;
-    font-size:22px;
+    font-size:1.5rem;
     color:whitesmoke;
     font-weight:bold;
 }
@@ -237,14 +274,17 @@ h1:hover{
 .fibre{
     background: linear-gradient(rgba(28, 217, 221, 0.456),rgba(0,0,0,0.4)),url(diet\ fibers.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
     height:900px;
 }
 
 .Dietary_Fibre{
-    font-size:50px;
+    font-size:3.2rem;
     font-weight: bold;
     margin-left:140px;
     color:whitesmoke;
@@ -254,7 +294,7 @@ h1:hover{
     text-align: justify;
     margin-top:-165px;
     margin-left:570px;
-    font-size:23px;
+    font-size:1.5rem;
     color:whitesmoke;
     font-weight:bold;
 }
@@ -264,15 +304,18 @@ h1:hover{
 .min{
     background: linear-gradient(rgba(89, 5, 86, 0.374),rgba(0,0,0,0.4)),url(min.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
     height:900px;
     /* clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%, 0% 100% ); */
 }
 
 .Mineral{
-    font-size:50px;
+    font-size:3.2rem;
     font-weight: bold;
     margin-left:175px;
     color:whitesmoke;
@@ -282,7 +325,7 @@ h1:hover{
     text-align: justify;
     margin-top:-165px;
     margin-left:570px;
-    font-size:23px;
+    font-size:1.5rem;
     color:whitesmoke;
     font-weight:bold;
 }
@@ -293,15 +336,18 @@ h1:hover{
 .vita{
     background: linear-gradient(rgba(89, 80, 89, 0.374),rgba(0,0,0,0.6)),url(vit.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
     height:900px;
 
 }
 
 .Vitamin{
-    font-size:50px;
+    font-size:3.2rem;
     font-weight: bold;
     margin-left:175px;
     color:whitesmoke;
@@ -311,7 +357,7 @@ h1:hover{
     text-align: justify;
     margin-top:-165px;
     margin-left:570px;
-    font-size:23px;
+    font-size:1.5rem;
     color:whitesmoke;
     font-weight:bold;
 }
@@ -321,14 +367,17 @@ h1:hover{
 .wat{
     background: linear-gradient(rgba(75, 39, 181, 0.06),rgba(0,0,0,0.6)),url(wat.jpg);
     /* background-image: url(./medi.jpg); */
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed;  */
+    width:90rem;
+    /* height: 100vh; */
     height:900px;
 }
 
 .Water{
-    font-size:50px;
+    font-size:3.2rem;
     font-weight: bold;
     margin-left:200px;
     color:whitesmoke;
@@ -338,7 +387,324 @@ h1:hover{
     text-align: justify;
     margin-top:-150px;
     margin-left:570px;
-    font-size:23px;
+    font-size:1.5rem;
     color:whitesmoke;
     font-weight:bold;
+}
+
+
+/*  ********************  Responsive Section ***********************  */
+
+@media screen and (max-width:720px){
+    .heading{
+        font-size:7rem;
+    }
+    /* Healthy Section */
+    .healthy{
+        height:90rem;
+    }
+    .health{
+        margin-top:15rem;
+    }
+    .sent_healthy{
+        font-size:3.5rem;
+        color:whitesmoke;
+        margin-right:2rem;
+        margin-top:-45rem;
+    }
+    /* Protein Section */
+    .pro{
+        height:130rem;
+    }
+    .protein{
+        margin-top:25rem;
+        margin-left:10rem;
+        font-size:5rem;
+        color: yellow;
+    }
+    .protein_image{
+        margin-top:3rem;
+    }
+    .psent{
+        font-size:3.5rem;
+        margin:-63rem 5rem 66rem 38rem;
+    }
+    /* Carbohydrate Section */
+    .carb{
+        height:150rem;
+    }
+    .carbohydrate{
+        font-size:3.5rem;
+        color:yellow;
+        margin-top:35rem;
+        margin-left:2rem;
+    }
+    .carbohydrate_image{
+        margin-top:5rem;
+    }
+    .csent{
+        font-size:4rem;
+        margin:-83rem 5rem 90rem 38rem;
+    }
+    /* Dietery-Fibre */
+    .fibre{
+        height:140rem;
+    }
+    .Dietary_Fibre{
+        margin-top:30rem;
+        margin-left:2rem;
+        font-size:5rem;
+        color:yellow;
+    }
+    
+    .fibre_image{
+        margin-top:3rem;
+    }
+    .dsent{
+        font-size:4rem;
+        margin:-65rem 5rem 0 40rem;
+        padding-bottom:70rem;
+    }
+    /* Mieral Section */
+    .min{
+        height:145rem;
+    }
+    .Mineral{
+        margin-top:40rem;
+        margin-left:7rem;
+        color:yellow;
+        font-size:5.5rem;
+    }
+    .mineral_image{
+        margin-top:3rem;
+    }
+    .msent{
+        font-size:4rem;
+        margin:-85rem 5rem 0 40rem;
+        padding-bottom:90rem;
+    }
+
+    /* Vitamin Section */
+    .vita{
+        height:180rem;
+    }
+    .Vitamin{
+        margin-top:45rem;
+        margin-left:7rem;
+        color:yellow;
+        font-size:5.5rem;
+    }
+    .vitamin_image{
+        margin-top:3rem;
+    }
+    .vsent{
+        font-size:4rem;
+        margin:-85rem 5rem 0 40rem;
+        padding-bottom:95rem;
+    }
+    /* Water Section */
+    .wat{
+        height:120rem;
+    }
+    .Water{
+        margin-top:30rem;
+        margin-left:10rem;
+        font-size:5rem;
+        color:yellow;
+    }
+    
+    .water_image{
+        margin-top:3rem;
+    }
+    .wsent{
+        font-size:4rem;
+        margin:-70rem 5rem 75rem 40rem;
+        /* padding-bottom:70rem; */
+    }
+
+
+}
+
+
+
+
+
+
+/*  ################  HAMBURGER-MENU Section  ################  */
+
+@media screen and (min-width:720px)
+{
+    .navigation{
+        display:none;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    .exercises{
+        margin-top:12px;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+
+    .navigation{
+        display:flex;
+        height:7.12rem;
+        background:grey;
+        width:90.2rem;
+        position: fixed;
+        margin-top:-0.77rem;
+        /* margin:0 auto; */
+        /* width:080px; */
+        /* height:300px; */
+        /* width:40% */
+    }
+    /* .left_side{
+    
+    } */
+    
+    .logo {
+        width: 13%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position:fixed;
+        float:left;
+        /* float:left; */
+    }
+    
+    .logo img {
+        width: 55%;
+        border: 5px;
+        border-radius: 90px;
+        margin:7px 0 0 20px;
+        /* background-attachment: fixed; */
+    }
+    
+    #hamburger{
+        /* z-index: 10;   */
+        /* position: absolute; */
+        float:right;
+    }
+    
+    #menu{
+        width:35px;
+        height:30px;
+        margin:40px 150px 20px 20rem ;
+    }
+    
+    .bar{
+        height:8px;
+        width:55px;
+        margin-left:55.2rem;
+        background-color:whitesmoke;
+        /* float:right; */
+    }
+    
+    #bar1{
+        transform:translateY(-5px);
+    }
+    
+    #bar3{
+        transform:translateY(5px);
+    }
+    
+    .nav{
+        padding: 0;
+        margin:150px -120px 0 20px;
+        transition:2s ease;
+        display:none;
+    }
+    
+    .nav li{
+        list-style:none;
+        padding:10px 0;
+        margin:13px;
+        background-color: soild white;
+    }
+    
+    .nav li a{
+        color:white;
+        text-decoration:none;
+        font-size: 2.55rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+    }
+    
+    .nav li a:hover{
+        border:1px soild white;
+    }
+    
+    
+    .icon .bar{
+        background-color: whitesmoke;
+        transition:1s ease;
+    }
+    
+    .icon #bar1{
+        transform:translateY(4px) rotate(-45deg);
+    }
+    
+    /* Only two lines are needed for making the cross so making the secong line opaque */
+    .icon #bar2{
+        opacity:0;
+    }
+    
+    .icon #bar3{
+        transform:translateY(-6px) rotate(45deg);
+    }
+    
+    
+    .change{
+        transition:6s ease;
+        background:rgba(58, 56, 56, 0.9);
+        border-radius:5px;
+        /* padding:10px; */
+        height:42rem;
+        margin-top:0.8rem;
+        margin-left:55rem;
+        position:absolute;
+        z-index: 500;
+        width:30rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .change{
+        width:40rem;
+        margin-left:45rem;
+        height:60rem;
+        margin-top:1rem;
+    }
+    .nav li a{
+        font-size:4rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .change{
+        width:80rem;
+        margin-left:5rem;
+        height:110rem;
+        margin-top:1rem;
+    }
+    .nav li{
+        margin:2.5rem;
+    }
+
+    .nav li a{
+        font-size:7rem;
+        padding:10px 200px 10px 205px;
+    }
 }
