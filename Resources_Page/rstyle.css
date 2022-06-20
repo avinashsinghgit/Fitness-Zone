@@ -9,13 +9,13 @@
 .navbar {
     position: fixed;
     display: flex;
-    background-color: #002d60;
+    background-color: blue;
 }
 
 .nav-list {
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 100%;
     /* background-color: black; */
     display: flex;
     /* Arranges all the items from vertical to horizontal level */
@@ -46,23 +46,20 @@
 
 }
 
-a.active,
-a:hover {
-    background: #1b9bff;
-    transition: 0.5s;
+
+.li a:active {
+    text-decoration: none;
+    color:rgb(230, 108, 74);
+
 }
 
-.rightnav {
-    width: 40%;
-    /* background-color: blueviolet; */
-    text-align: right;
-    padding: 10px;
-    margin-top: 30px;
-    margin-right: 20px;
+a.theme_color:hover,a.theme_color:active{
+    background: #1b9bff;
+
 }
 
 .logo {
-    width: 20%;
+    width: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,16 +71,10 @@ a:hover {
     border-radius: 90px;
 }
 
-#search {
-    padding: 5px;
-    font-size: 17px;
-    border: 2px solid grey;
-    border-radius: 60px;
-}
 
 .background {
-    background: rgba(0, 0, 0, 0.7) url('background.jpg');
-    /* background-position: top; */
+    background:grey;
+    background-position: top;
     /* background-size: cover; */
     width: 100%;
     /* width:1000px;
@@ -91,10 +82,6 @@ a:hover {
     /* background-blend-mode: darken; */
     background-repeat: no-repeat;
     /* background-size: cover; */
-}
-
-.btn-sm {
-    margin-right: 80px;
 }
 
 /*  **************  Navigation Section Ends  ***************  */
@@ -109,6 +96,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     height: 2000px;
+    width:90rem;
 }
 
 /* Heading :- Resouces & Blogs */
@@ -154,3 +142,218 @@ a:hover {
 }   */
 
 
+/*  ################  HAMBURGER-MENU Section  ################  */
+
+@media screen and (min-width:720px)
+{
+    .navigation{
+        display:none;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    .about_background{
+        margin-top:12px;
+    }
+
+    .about{
+        height:140rem;
+    }
+
+    .heading{
+        margin:40rem 0 0 25rem;
+        font-size:7rem;
+    }
+    .text-one{
+        /* margin-top:20rem; */
+        font-size:3rem;
+    }
+    .text-two{
+        font-size:3rem;
+    }
+    .text-three{
+        font-size:4.5rem;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+
+    .navigation{
+        display:flex;
+        height:7.12rem;
+        background:grey;
+        width:90.2rem;
+        position: fixed;
+        margin-top:-0.77rem;
+        /* margin:0 auto; */
+        /* width:080px; */
+        /* height:300px; */
+        /* width:40% */
+    }
+    /* .left_side{
+    
+    } */
+    
+    .logo {
+        width: 13%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position:fixed;
+        float:left;
+        /* float:left; */
+    }
+    
+    .logo img {
+        width: 55%;
+        border: 5px;
+        border-radius: 90px;
+        margin:7px 0 0 20px;
+        /* background-attachment: fixed; */
+    }
+    
+    #hamburger{
+        /* z-index: 10;   */
+        /* position: absolute; */
+        float:right;
+    }
+    
+    #menu{
+        width:35px;
+        height:30px;
+        margin:40px 150px 20px 20rem ;
+    }
+    
+    .bar{
+        height:8px;
+        width:55px;
+        margin-left:55.2rem;
+        background-color:whitesmoke;
+        /* float:right; */
+    }
+    
+    #bar1{
+        transform:translateY(-5px);
+    }
+    
+    #bar3{
+        transform:translateY(5px);
+    }
+    
+    .nav{
+        padding: 0;
+        margin:150px -120px 0 20px;
+        transition:2s ease;
+        display:none;
+    }
+    
+    .nav li{
+        list-style:none;
+        padding:10px 0;
+        margin:13px;
+        background-color: soild white;
+    }
+    
+    .nav li a{
+        color:white;
+        text-decoration:none;
+        font-size: 2.55rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+    }
+    
+    .nav li a:hover{
+        border:1px soild white;
+    }
+    
+    
+    .icon .bar{
+        background-color: whitesmoke;
+        transition:1s ease;
+    }
+    
+    .icon #bar1{
+        transform:translateY(4px) rotate(-45deg);
+    }
+    
+    /* Only two lines are needed for making the cross so making the secong line opaque */
+    .icon #bar2{
+        opacity:0;
+    }
+    
+    .icon #bar3{
+        transform:translateY(-6px) rotate(45deg);
+    }
+    
+    
+    .change{
+        transition:6s ease;
+        background:rgba(58, 56, 56, 0.9);
+        border-radius:5px;
+        /* padding:10px; */
+        height:42rem;
+        margin-top:0.8rem;
+        margin-left:55rem;
+        position:absolute;
+        z-index: 500;
+        width:30rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .change{
+        width:40rem;
+        margin-left:45rem;
+        height:60rem;
+        margin-top:1rem;
+    }
+    .nav li a{
+        font-size:4rem;
+    }
+    .about{
+        height:270rem;
+    }
+    .heading{
+        margin:120rem 0 0 20rem;
+        font-size:10rem;
+    }
+    .text-one{
+        margin-top:10rem;
+        font-size:5rem;
+    }
+    .text-two{
+        font-size:5rem;
+    }
+    .text-three{
+        font-size:6.5rem;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .change{
+        width:80rem;
+        margin-left:5rem;
+        height:110rem;
+        margin-top:1rem;
+    }
+    .nav li{
+        margin:2.5rem;
+    }
+
+    .nav li a{
+        font-size:7rem;
+        padding:10px 200px 10px 205px;
+    }
+}

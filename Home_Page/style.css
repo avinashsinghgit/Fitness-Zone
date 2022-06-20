@@ -8,7 +8,8 @@
 .navbar {
     position: fixed;
     display: flex;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.847);
+    z-index:100000;
 }
 
 .nav-list {
@@ -123,8 +124,8 @@ a:link{
 }
 
 
-/*  **************  Navigation Section Ends  ***************  */
 
+/*  **************  Navigation Section Ends  ***************  */
 
 
 /* Background Video */
@@ -459,18 +460,21 @@ a:hover {
     margin-left: 95px;
 }
 
-.link a:hover {
-    text-decoration: none;
-    color: yellow;
-
+.links ul li{
+    list-style:none;
 }
 
-a.active,
+li a.link{
+    margin-bottom:10px;
+}
+
+
+/* a.active,
 a:hover {
     background: #1b9bff;
     border-radius: 5px;
     transition: 0.5s;
-}
+} */
 
 /* .links a a:hover {
     text-decoration: none;

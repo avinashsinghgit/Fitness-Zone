@@ -9,77 +9,93 @@
         <title>Resources</title>
         <!-- Used to connect html and css documents -->
         <link rel="stylesheet" href="rstyle.css">
+        <script src="../Home_Page/script.js"></script>
 </head>
 
 <body>
 
-        <!-- Navigation Section -->
+    <!-- HamBurger Section -->
+    <div class="navigation">
+        <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>         
+        <div id="hambuger">
+            <div id="menu" onclick="onClickMenu()" >
+                <div id = "bar1" class="bar"></div>
+                <div id = "bar2" class="bar"></div>
+                <div id = "bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="../Home_Page/index.html">Home</a></li>
+                <li><a href="../About_Page/about.html">About</a></li>
+                <li><a href="../Exercise_Page/exercise.html">Exercise</a></li>
+                <li><a href="../Nutrition_Page/nutrition.html">Nutrition</a></li>
+                <li><a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1">Find Gyms</a></li>
+                <li><a href="../Resources_Page/resources.html">Resources</a></li>
+                <li><a href="../Contact_Page/contact.html">Consult Experts</a></li>
+            </ul>
+        </div>
+    </div>
 
-        <nav class="navbar background">
-                <ul class="nav-list">
-                        <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>
-                        <li> <a href="../Home_Page/index.html">Home</a> </li>
-                        <li> <a href="../About_Page/about.html">About</a> </li>
-                        <li> <a href="../Exercise_Page/exercise.html">Exercises</a> </li>
-                        <li> <a href="../Nutrition_Page/nutrition.html">Nutrition</a> </li>
-                        <li> <a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1">Find
-                                        Gyms</a></li>
-                        <li> <a href="../Resources_Page/resources.html">Resources</a> </li>
-                        <li> <a href="../Contact_Page/contact.html" target="_blank" > Consult Experts</a> </li>
-                </ul>
+    <!-- Navigation Section -->
 
-                <!-- Right-Side of Navigation Section (Search-Box) -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><a href="../Home_Page/index.html"> <img src="logo.jpg" alt="logo"> </a></div>
+            <li> <a href="../Home_Page/index.html" class="theme_color">Home</a> </li>
+            <li> <a href="../About_Page/about.html" class="theme_color">About</a> </li>
+            <li> <a href="../Exercise_Page/exercise.html" class="theme_color">Exercises</a> </li>
+            <li> <a href="../Nutrition_Page/nutrition.html" class="theme_color">Nutrition</a> </li>
+            <li> <a href="https://www.google.com/maps/search/gyms+near+me/@25.4681697,78.6192716,13z/data=!3m1!4b1" class="theme_color">Find
+                    Gyms</a></li>
+            <li> <a href="../Resources_Page/resources.html" class="theme_color">Resources</a> </li>
+            <li> <a href="../Contact_Page/contact.html" class="theme_color">Consult Experts</a> </li>
+            <!-- <li> <a href="../Fitness_Center/fit.html" target="_blank">Our</a> </li> -->
+        </ul>
+    </nav>
 
-                <div class="rightnav">
-                        <input type="text" name="search" id="search">
-                        <button class="btn btn-search"> <a href="#search"><img src="search.png" alt="search" width="20"
-                                                height="20"></a></button>
-                </div>
-        </nav>
+    <!-- Navigation Section Ends -->
 
-        <!-- Navigation Section Ends -->
 
-        <!-- Resouces Section Starts -->
+<!-- Resouces Section Starts -->
 
-        <section class="art">
+<section class="art">
 
-                <div class="articles">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+        <div class="articles">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
-                        <!-- Heading :- Resources & Blogs -->
-                        <div class="heading"><u> Resources </u></div><br><br><br><br><br>
+                <!-- Heading :- Resources & Blogs -->
+                <div class="heading"><u> Resources </u></div><br><br><br><br><br>
 
-                        <!-- Resources -->
-                        <div class="resource">
-                                <div class="sent1">
-                                        <li><a href="https://putthatcheeseburgerdown.com/2022/03/07/does-body-positivity-affect-mental-health/" >DOES BODY POSITIVITY AFFECT MENTAL HEALTH?</a> </li>
-                                </div>
-
-                                <br>
-                                <br>
-                                <li><a href="https://putthatcheeseburgerdown.com/2021/06/13/this-is-how-you-get-rid-of-stubborn-lower-belly-fat/" >THIS IS HOW YOU GET RID OF STUBBORN LOWER BELLY FAT</a> </li><br><br>
-                                <li><a href="https://putthatcheeseburgerdown.com/2022/03/27/the-vital-role-vitamin-d-plays-in-your-physical-and-mental-health/" >THE VITAL ROLE VITAMIN D PLAYS IN YOUR PHYSICAL AND MENTAL HEALTH</a></li><br><br>
-                                <li><a href="https://putthatcheeseburgerdown.com/2021/11/16/do-you-have-trouble-sleeping-try-thee-steps-to-fix-your-schedule/" >DO YOU HAVE TROUBLE SLEEPING? TRY THEE STEPS TO FIX YOUR SCHEDULE</a></li><br><br>
-                                <li><a href="https://putthatcheeseburgerdown.com/2022/02/16/5-satvik-food-items-that-you-must-store-in-your-kitchen/">DO YOU HAVE THESE 5 SATVIK FOOD ITEMS IN YOUR KITCHEN?</a></li><br><br>
-                                <li><a href="https://putthatcheeseburgerdown.com/2021/03/17/these-11-foods-will-supercharge-your-immune-system/" >THESE 11 FOODS WILL SUPERCHARGE YOUR IMMUNE SYSTEM</a></li><br><br>
-                                <li><a href="https://putthatcheeseburgerdown.com/2021/04/26/try-this-routine-every-morning-to-feel-more-mentally-balanced/" >TRY THIS ROUTINE EVERY MORNING TO FEEL MORE MENTALLY BALANCED</a></li><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/beginner-body-weight-workout-burn-fat-build-muscle/" >The Beginner Bodyweight Workout: 20-Minute Routine To Do At Home or Anywhere!</li> </a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/do-a-pull-up/" >Get Your First Pull-up Or Chin-up! 30-Day Pull up Progression Plan</li></a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/body-fat-percentage/" >7 Ways to Measure or Calculate Your Body Fat Percentage (And Lower It!)</li></a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/a-beginners-guide-to-intermittent-fasting/" >Intermittent Fasting Beginner's Guide (Should You Skip Breakfast in 2022?)</li> </a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/how-to-stop-stress-eating-3-uncommon-tools-for-ending-emotional-eating/" >How to Stop Stress Eating: 3 Uncommon Tools for Ending Emotional Eating</li> </a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/what-is-creatine-how-to-start-supplementing-with-creatine/" >The Ultimate Guide to Start Taking Creatine</li> </a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/fallen-off-the-wagon-today-is-national-respawn-day/" >The Ultimate Guide for Restarting Your Fitness Journey </li></a><br><br>
-                                <li><a href="https://www.nerdfitness.com/blog/push-up-progression-plan/" >The Push-up Progression Plan (Get Your First Push-up!)</li></a><br><br>
+                <!-- Resources -->
+                <div class="resource">
+                        <div class="sent1">
+                                <li><a href="https://putthatcheeseburgerdown.com/2022/03/07/does-body-positivity-affect-mental-health/" >DOES BODY POSITIVITY AFFECT MENTAL HEALTH?</a> </li>
                         </div>
 
+                        <br>
+                        <br>
+                        <li><a href="https://putthatcheeseburgerdown.com/2021/06/13/this-is-how-you-get-rid-of-stubborn-lower-belly-fat/" >THIS IS HOW YOU GET RID OF STUBBORN LOWER BELLY FAT</a> </li><br><br>
+                        <li><a href="https://putthatcheeseburgerdown.com/2022/03/27/the-vital-role-vitamin-d-plays-in-your-physical-and-mental-health/" >THE VITAL ROLE VITAMIN D PLAYS IN YOUR PHYSICAL AND MENTAL HEALTH</a></li><br><br>
+                        <li><a href="https://putthatcheeseburgerdown.com/2021/11/16/do-you-have-trouble-sleeping-try-thee-steps-to-fix-your-schedule/" >DO YOU HAVE TROUBLE SLEEPING? TRY THEE STEPS TO FIX YOUR SCHEDULE</a></li><br><br>
+                        <li><a href="https://putthatcheeseburgerdown.com/2022/02/16/5-satvik-food-items-that-you-must-store-in-your-kitchen/">DO YOU HAVE THESE 5 SATVIK FOOD ITEMS IN YOUR KITCHEN?</a></li><br><br>
+                        <li><a href="https://putthatcheeseburgerdown.com/2021/03/17/these-11-foods-will-supercharge-your-immune-system/" >THESE 11 FOODS WILL SUPERCHARGE YOUR IMMUNE SYSTEM</a></li><br><br>
+                        <li><a href="https://putthatcheeseburgerdown.com/2021/04/26/try-this-routine-every-morning-to-feel-more-mentally-balanced/" >TRY THIS ROUTINE EVERY MORNING TO FEEL MORE MENTALLY BALANCED</a></li><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/beginner-body-weight-workout-burn-fat-build-muscle/" >The Beginner Bodyweight Workout: 20-Minute Routine To Do At Home or Anywhere!</li> </a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/do-a-pull-up/" >Get Your First Pull-up Or Chin-up! 30-Day Pull up Progression Plan</li></a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/body-fat-percentage/" >7 Ways to Measure or Calculate Your Body Fat Percentage (And Lower It!)</li></a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/a-beginners-guide-to-intermittent-fasting/" >Intermittent Fasting Beginner's Guide (Should You Skip Breakfast in 2022?)</li> </a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/how-to-stop-stress-eating-3-uncommon-tools-for-ending-emotional-eating/" >How to Stop Stress Eating: 3 Uncommon Tools for Ending Emotional Eating</li> </a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/what-is-creatine-how-to-start-supplementing-with-creatine/" >The Ultimate Guide to Start Taking Creatine</li> </a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/fallen-off-the-wagon-today-is-national-respawn-day/" >The Ultimate Guide for Restarting Your Fitness Journey </li></a><br><br>
+                        <li><a href="https://www.nerdfitness.com/blog/push-up-progression-plan/" >The Push-up Progression Plan (Get Your First Push-up!)</li></a><br><br>
                 </div>
-        </section>
+
+        </div>
+</section>
 
 
 </body>

@@ -1,61 +1,424 @@
 *{
+    margin:0;
+    padding:0;
+}
+
+/*  **************  Navigation Section Begins  ***************  */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: blue;
+}
+
+.nav-list {
     margin: 0;
     padding: 0;
-    /* font-family:'poppins',sans-serif ; */
-    /* box-sizing: border-box; */
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    /* Arranges all the items from vertical to horizontal level */
+    /*justify-content: center;*/
+    align-items: center;
+    /* Alligns the items in the center of the vertical axis. */
 }
-.hero{
-    width:100%;
+
+.nav-list li {
+    list-style: none;
+    /* Used to Remove Dot before list items*/
+    padding: 7px 4.6px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: yellow;
+
+}
+
+
+.li a:active {
+    text-decoration: none;
+    color:rgb(230, 108, 74);
+
+}
+
+a.theme_color:hover,a.theme_color:active{
+    background: #1b9bff;
+
+}
+
+.logo {
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 55%;
+    border: 5px;
+    border-radius: 90px;
+}
+
+
+.background {
+    background:grey;
+    background-position: top;
+    /* background-size: cover; */
+    width: 100%;
+    /* width:1000px;
+    height:200px; */
+    /* background-blend-mode: darken; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+/*  **************  Navigation Section Ends  ***************  */
+
+.container{
+    /* padding-top:13rem; */
+    width:90rem;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.7),#3551b5), url(waterfall.jpg.jpg);
-   background-position: center;
-   background-size: cover; 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),#3551b5), url(waterfall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    /* background-attachment: fixed; */
+    /* height:100rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 form{
     width: 90%;
     max-width: 600px;
+    /* margin:5rem  */
+    margin-left:-5rem;
 }
-.iput-group{
-    margin-bottom: 30px;
-    position: relative;
+
+h1{
+    font-size:4rem;
+    color:whitesmoke;
+    margin:5rem 0 2rem 13.5rem;
 }
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    outline: 0;
-    border: 1px solid #fff;
-    color: #fff;
-    background: transparent;
-    font-size: 15px;
-}
-label{
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    color: #fff;
-    cursor: text;
-    transition: 0.2s;
-}
+
 button{
     padding: 10px 0;
     color: #fff;
     outline: none;
     background: transparent;
     border: 1px solid #fff;
-    width: 100%;
+    width: 25rem;
+    margin-left:10rem;
+    border-radius:1.2rem;
     cursor: pointer;
 }
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label{
-    top: -35px;
-    font-size: 14px;
+
+
+.alert{
+    background-color: rgba(255, 255, 0, 0.715);
+    border-radius: 1rem;
+    font-size:2rem;
+    /* padding:0 10rem 0 20rem; */
+    margin-left:10rem;
+    padding-left:4rem;
+    width:21.3rem;
+    display:none;
+}
+
+
+
+.input_name{
+    margin:1.5rem 0 0 0;
+}
+
+#name{
+    width: 25rem;
+    height:1.5rem;
+    font-size:1.5rem;
+    /* border-radius:1.2rem; */
+    padding-left:1rem;
+    margin-left:10rem;
+}
+
+.input_number{
+    margin:1.5rem 0 0 0;
+}
+
+#phone_number{
+    width: 25rem;
+    height:1.5rem;
+    font-size:1.5rem;
+    /* border-radius:1.2rem; */
+    padding-left:1rem;
+    margin-left:10rem;
+}
+
+.input_email{
+    margin:1.5rem 0 0 0;
+}
+
+#email{
+    width: 25rem;
+    height:1.5rem;
+    font-size:1.5rem;
+    /* border-radius:1.2rem; */
+    padding-left:1rem;
+    margin-left:10rem;
+}
+
+.input_message{
+    margin:1.5rem 0 0 0;
+}
+
+#message{
+    width: 25rem;
+    height:8rem;
+    font-size:1.5rem;
+    /* border-radius:1.2rem; */
+    padding-left:1rem;
+    margin-left:10rem;
+}
+
+.submit{
+    margin:1.5rem 0 0 0;
+}
+
+
+
+/* Responsive Section */
+
+/* @media screen and (max-width:360px){
+    .container{
+        height:140rem;
+    }
+} */
+
+
+
+/*  ################  HAMBURGER-MENU Section  ################  */
+
+@media screen and (min-width:720px)
+{
+    .navigation{
+        display:none;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    .about_background{
+        margin-top:12px;
+    }
+
+    .about{
+        height:140rem;
+    }
+
+    .heading{
+        margin:40rem 0 0 25rem;
+        font-size:7rem;
+    }
+    .text-one{
+        /* margin-top:20rem; */
+        font-size:3rem;
+    }
+    .text-two{
+        font-size:3rem;
+    }
+    .text-three{
+        font-size:4.5rem;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+
+    .navigation{
+        display:flex;
+        height:7.12rem;
+        background:grey;
+        width:90.2rem;
+        position: fixed;
+        margin-top:-0.77rem;
+        /* margin:0 auto; */
+        /* width:080px; */
+        /* height:300px; */
+        /* width:40% */
+    }
+    /* .left_side{
+    
+    } */
+    
+    .logo {
+        width: 13%;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position:fixed;
+        float:left;
+        /* float:left; */
+    }
+    
+    .logo img {
+        width: 55%;
+        border: 5px;
+        border-radius: 90px;
+        margin:7px 0 0 20px;
+        /* background-attachment: fixed; */
+    }
+    
+    #hamburger{
+        /* z-index: 10;   */
+        /* position: absolute; */
+        float:right;
+    }
+    
+    #menu{
+        width:35px;
+        height:30px;
+        margin:40px 150px 20px 20rem ;
+    }
+    
+    .bar{
+        height:8px;
+        width:55px;
+        margin-left:55.2rem;
+        background-color:whitesmoke;
+        /* float:right; */
+    }
+    
+    #bar1{
+        transform:translateY(-5px);
+    }
+    
+    #bar3{
+        transform:translateY(5px);
+    }
+    
+    .nav{
+        padding: 0;
+        margin:150px -120px 0 20px;
+        transition:2s ease;
+        display:none;
+    }
+    
+    .nav li{
+        list-style:none;
+        padding:10px 0;
+        margin:13px;
+        background-color: soild white;
+    }
+    
+    .nav li a{
+        color:white;
+        text-decoration:none;
+        font-size: 2.55rem;
+        font-weight: bold;
+        background-color: red;
+        border-radius:10px;
+        padding:10px 25px 10px 25px;
+    }
+    
+    .nav li a:hover{
+        border:1px soild white;
+    }
+    
+    
+    .icon .bar{
+        background-color: whitesmoke;
+        transition:1s ease;
+    }
+    
+    .icon #bar1{
+        transform:translateY(4px) rotate(-45deg);
+    }
+    
+    /* Only two lines are needed for making the cross so making the secong line opaque */
+    .icon #bar2{
+        opacity:0;
+    }
+    
+    .icon #bar3{
+        transform:translateY(-6px) rotate(45deg);
+    }
+    
+    
+    .change{
+        transition:6s ease;
+        background:rgba(58, 56, 56, 0.9);
+        border-radius:5px;
+        /* padding:10px; */
+        height:42rem;
+        margin-top:0.8rem;
+        margin-left:55rem;
+        position:absolute;
+        z-index: 500;
+        width:30rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .change{
+        width:40rem;
+        margin-left:45rem;
+        height:60rem;
+        margin-top:1rem;
+    }
+    .nav li a{
+        font-size:4rem;
+    }
+    .about{
+        height:270rem;
+    }
+    .heading{
+        margin:120rem 0 0 20rem;
+        font-size:10rem;
+    }
+    .text-one{
+        margin-top:10rem;
+        font-size:5rem;
+    }
+    .text-two{
+        font-size:5rem;
+    }
+    .text-three{
+        font-size:6.5rem;
+    }
 
 }
-     
+
+@media screen and (max-width: 360px){
+    .change{
+        width:80rem;
+        margin-left:5rem;
+        height:110rem;
+        margin-top:1rem;
+    }
+    .nav li{
+        margin:2.5rem;
+    }
+
+    .nav li a{
+        font-size:7rem;
+        padding:10px 200px 10px 205px;
+    }
+}
