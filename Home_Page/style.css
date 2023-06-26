@@ -123,6 +123,9 @@ a:link{
     display: block;
 }
 
+.logo a:hover{
+    background: transparent;
+}
 
 
 /*  **************  Navigation Section Ends  ***************  */
@@ -441,7 +444,7 @@ a:hover {
 
 .quick_link
 {
-    font-size:1.5rem;
+    font-size:3.5rem;
     color:whitesmoke;
     margin-top:-30px;
     margin-left:70px;
@@ -454,19 +457,28 @@ a:hover {
 }
 
 .link{
-    font-size:1.5rem;
-    color:whitesmoke;
+    font-size:1.7rem;
+    /* color:yellow; */
     text-decoration: none;
-    margin-left: 95px;
+    margin-left: 7rem;
+    padding: 0;
+    /* background-color: red; */
+}
+
+a.link:hover{
+    background-color:transparent;
+    /* background-color:blue; */
+    color:yellow;
+    text-decoration: underline;
+
 }
 
 .links ul li{
+    margin-top:1rem;
     list-style:none;
 }
 
-li a.link{
-    margin-bottom:10px;
-}
+
 
 
 /* a.active,
@@ -496,7 +508,7 @@ a:hover {
 {
     text-align: justify;
     margin-left: 900px;
-    margin-top:-300px;
+    margin-top:-24rem;
 }
 
 .devlop
@@ -540,7 +552,7 @@ a:hover {
     flex-wrap: wrap;
 }
 .items {
-    margin-top: -1060px;
+    margin-top: -1160px;
     /* background: yellowgreen; */
     background: rgba(88, 85, 85, 0.7) url('fit5.jpg');
     background-repeat: no-repeat;
@@ -764,6 +776,10 @@ a:hover {
     margin-left:100px;
     font-size:2.8rem;
     color:white;
+}
+
+a.link{
+    margin-bottom:2rem;
 }
 
 
